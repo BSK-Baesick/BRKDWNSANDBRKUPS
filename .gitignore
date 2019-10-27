@@ -61,3 +61,19 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+.idea/.idea.NOTA/.idea/contentModel.xml
+.idea/.idea.NOTA/.idea/indexLayout.xml
+.idea/.idea.NOTA/.idea/vcs.xml
+.idea/.idea.NOTA/.idea/workspace.xml
+debug.log
+.idea/.idea.NOTA/.idea/indexLayout.xml
+.idea/.idea.NOTA/.idea/workspace.xml
+
+# Ignore the auto-generated AOT compatibility dll.
+/Assets/Plugins/Sirenix/Assemblies/AOT/*
+
+# Ignore all unpacked demos.
+/Assets/Plugins/Sirenix/Demos/*
+
+# But keep the demo packages themselves.
+!/Assets/Plugins/Sirenix/Demos/*.unitypackage
