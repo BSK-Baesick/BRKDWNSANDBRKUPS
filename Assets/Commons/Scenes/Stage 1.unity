@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 74736754}
   - component: {fileID: 74736753}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Game Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -203,123 +203,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &542025890 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2179856793993042945, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-    type: 3}
-  m_PrefabInstance: {fileID: 5061812440122535810}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &542025891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 542025890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d0390bd8b8ffd640b34fe25065ff1df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  updateType: 0
-  isSpeedBased: 0
-  hasOnStart: 0
-  hasOnPlay: 0
-  hasOnUpdate: 0
-  hasOnStepComplete: 0
-  hasOnComplete: 0
-  hasOnTweenCreated: 0
-  hasOnRewind: 0
-  onStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onPlay:
-    m_PersistentCalls:
-      m_Calls: []
-  onUpdate:
-    m_PersistentCalls:
-      m_Calls: []
-  onStepComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onTweenCreated:
-    m_PersistentCalls:
-      m_Calls: []
-  onRewind:
-    m_PersistentCalls:
-      m_Calls: []
-  targetIsSelf: 1
-  targetGO: {fileID: 0}
-  tweenTargetIsTargetGO: 1
-  delay: 0
-  duration: 1
-  easeType: 6
-  easeCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  loopType: 1
-  loops: -1
-  id: 
-  isRelative: 0
-  isFrom: 0
-  isIndependentUpdate: 0
-  autoKill: 1
-  isActive: 1
-  isValid: 1
-  target: {fileID: 542025898}
-  animationType: 5
-  targetType: 11
-  forcedTargetType: 0
-  autoPlay: 1
-  useTargetAsV3: 0
-  endValueFloat: 1.25
-  endValueV3: {x: 0, y: 0, z: 0}
-  endValueV2: {x: 0, y: 0}
-  endValueColor: {r: 1, g: 1, b: 1, a: 1}
-  endValueString: 
-  endValueRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  endValueTransform: {fileID: 0}
-  optionalBool0: 1
-  optionalFloat0: 0
-  optionalInt0: 0
-  optionalRotationMode: 0
-  optionalScrambleMode: 0
-  optionalString: 
---- !u!4 &542025898 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-    type: 3}
-  m_PrefabInstance: {fileID: 5061812440122535810}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &622836468
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,17 +407,18 @@ MonoBehaviour:
   fsm:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
-    name: FSM
+    name: Score Manager
     startState: Current Score
     states:
     - name: Current Score
-      description: 
+      description: Initialize the score of the player to zero at the start of the
+        game
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 50
         y: 100
-        width: 122
+        width: 286
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -617,7 +501,7 @@ MonoBehaviour:
       categories:
       - 
       variableCategoryIDs: 
-    description: 
+    description: This FSM handles the EMOPoints gained by the player.
     docUrl: 
     showStateLabel: 0
     maxLoopCount: 0
@@ -631,7 +515,7 @@ MonoBehaviour:
     RestartOnEnable: 1
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 1
+    editorFlags: 0
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
@@ -749,7 +633,7 @@ MonoBehaviour:
   pickableLayers2D:
     serializedVersion: 2
     m_Bits: 1
-  autoUpdatePickedObject: 0
+  autoUpdatePickedObject: 1
   allowUIDetection: 1
   enableUIMode: 1
   autoUpdatePickedUI: 1
@@ -761,8 +645,8 @@ MonoBehaviour:
   enableSimulation: 1
   twistKey: 308
   swipeKey: 306
-  showGuiInspector: 0
-  showSelectInspector: 0
+  showGuiInspector: 1
+  showSelectInspector: 1
   showGestureInspector: 1
   showTwoFingerInspector: 0
   showSecondFingerInspector: 0
@@ -781,6 +665,646 @@ Transform:
   m_Father: {fileID: 793864117}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1089097164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1089097165}
+  - component: {fileID: 1089097166}
+  - component: {fileID: 1089097167}
+  - component: {fileID: 1089097168}
+  m_Layer: 0
+  m_Name: Pool Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1089097165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089097164}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2074427021}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1089097166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089097164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59dfbc0f4f3a98b4ebf4ad40fc3f43aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poolName: Beats
+  matchPoolScale: 0
+  matchPoolLayer: 0
+  dontReparent: 0
+  _dontDestroyOnLoad: 0
+  logMessages: 1
+  _perPrefabPoolOptions: []
+  maxParticleDespawnTime: 300
+--- !u!114 &1089097167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089097164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59dfbc0f4f3a98b4ebf4ad40fc3f43aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poolName: Explosions
+  matchPoolScale: 0
+  matchPoolLayer: 0
+  dontReparent: 0
+  _dontDestroyOnLoad: 0
+  logMessages: 1
+  _perPrefabPoolOptions: []
+  maxParticleDespawnTime: 300
+--- !u!114 &1089097168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089097164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 2
+    usedInTemplate: {fileID: 0}
+    name: Pool Manager
+    startState: Control Pool
+    states:
+    - name: Control Pool
+      description: Edit the pool properties
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50
+        y: 100
+        width: 147.5
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.PmtCreatePrefabPool
+        - HutongGames.PlayMaker.Actions.PmtCreatePrefabPool
+        - HutongGames.PlayMaker.Actions.PmtCreatePrefabPool
+        - HutongGames.PlayMaker.Actions.PmtCreatePrefabPool
+        - HutongGames.PlayMaker.Actions.PmtCreatePrefabPool
+        - HutongGames.PlayMaker.Actions.PmtCreatePrefabPool
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 010101010101
+        actionIsOpen: 010101010101
+        actionStartIndex: 000000000c0000001800000024000000300000003c000000
+        actionHashCodes: 52729e0552729e0552729e0552729e0552729e0552729e05
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 8205096214953483468, guid: 0764f0a4caec53047bf1dc1ef39316af,
+            type: 3}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 7837418162021311204, guid: d274dd7f7fab0d940b1da37d6a543b56,
+            type: 3}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 1732862054488416, guid: 98958d79521880540984f3838adbee94,
+            type: 3}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 1243861341673150, guid: 3f26293dfafa1e447ab052cf7502a03e,
+            type: 3}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 1874963620615116, guid: 49dca617664621d4dba68a005c1acd35,
+            type: 3}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 1387999993237446, guid: 429ff48304d4db946bd190220bdd0ffd,
+            type: 3}
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Beats
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Beats
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Explosions
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Explosions
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Explosions
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Explosions
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 10
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 20
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 10
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 10
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 20
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 10
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 10
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 20
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 10
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 10
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 20
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 10
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 10
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 20
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 10
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 10
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 20
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 10
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 120000001300000010000000110000001000000011000000100000001000000017000000170000001700000010000000120000001300000010000000110000001000000011000000100000001000000017000000170000001700000010000000120000001300000010000000110000001000000011000000100000001000000017000000170000001700000010000000120000001300000010000000110000001000000011000000100000001000000017000000170000001700000010000000120000001300000010000000110000001000000011000000100000001000000017000000170000001700000010000000120000001300000010000000110000001000000011000000100000001000000017000000170000001700000010000000
+        paramName:
+        - poolName
+        - prefab
+        - preloadAmount
+        - limitInstances
+        - limitAmount
+        - cullDespawned
+        - cullAbove
+        - cullDelay
+        - successEvent
+        - alreadyExistsEvent
+        - failureEvent
+        - preloadedAmount
+        - poolName
+        - prefab
+        - preloadAmount
+        - limitInstances
+        - limitAmount
+        - cullDespawned
+        - cullAbove
+        - cullDelay
+        - successEvent
+        - alreadyExistsEvent
+        - failureEvent
+        - preloadedAmount
+        - poolName
+        - prefab
+        - preloadAmount
+        - limitInstances
+        - limitAmount
+        - cullDespawned
+        - cullAbove
+        - cullDelay
+        - successEvent
+        - alreadyExistsEvent
+        - failureEvent
+        - preloadedAmount
+        - poolName
+        - prefab
+        - preloadAmount
+        - limitInstances
+        - limitAmount
+        - cullDespawned
+        - cullAbove
+        - cullDelay
+        - successEvent
+        - alreadyExistsEvent
+        - failureEvent
+        - preloadedAmount
+        - poolName
+        - prefab
+        - preloadAmount
+        - limitInstances
+        - limitAmount
+        - cullDespawned
+        - cullAbove
+        - cullDelay
+        - successEvent
+        - alreadyExistsEvent
+        - failureEvent
+        - preloadedAmount
+        - poolName
+        - prefab
+        - preloadAmount
+        - limitInstances
+        - limitAmount
+        - cullDespawned
+        - cullAbove
+        - cullDelay
+        - successEvent
+        - alreadyExistsEvent
+        - failureEvent
+        - preloadedAmount
+        paramDataPos: 00000000000000000000000000000000010000000100000002000000030000000000000001000000020000000400000001000000010000000500000002000000060000000300000007000000080000000300000004000000050000000900000002000000020000000a000000040000000b000000050000000c0000000d0000000600000007000000080000000e00000003000000030000000f0000000600000010000000070000001100000012000000090000000a0000000b0000001300000004000000040000001400000008000000150000000900000016000000170000000c0000000d0000000e000000180000000500000005000000190000000a0000001a0000000b0000001b0000001c0000000f00000010000000110000001d000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    events: []
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 
+    description: This FSM handles object pooling.
+    docUrl: 
+    showStateLabel: 0
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 1
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
 --- !u!1 &1295733990
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,7 +1351,7 @@ MonoBehaviour:
   fsm:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
-    name: FSM
+    name: Game Manager
     startState: Initialize Game State
     states:
     - name: Initialize Game State
@@ -920,7 +1444,7 @@ MonoBehaviour:
       categories:
       - 
       variableCategoryIDs: 
-    description: 
+    description: This FSM handles the state of the game.
     docUrl: 
     showStateLabel: 0
     maxLoopCount: 0
@@ -934,7 +1458,7 @@ MonoBehaviour:
     RestartOnEnable: 1
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 1
+    editorFlags: 0
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
@@ -1010,7 +1534,7 @@ MonoBehaviour:
   fsm:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
-    name: FSM
+    name: Spawn Manager
     startState: Get Koreography Event Payload
     states:
     - name: Get Koreography Event Payload
@@ -1018,7 +1542,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 97
+        x: 497
         y: 107.92969
         width: 292.5
         height: 32
@@ -1098,16 +1622,16 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 50
+        x: 450
         y: 211.85938
         width: 400
-        height: 112
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: (0) Spawn Single Tap Beat (Joy) in Random Position
+          name: Spawn Single Tap Beat (Joy)
           isSystemEvent: 0
           isGlobal: 0
         toState: Create Single Tap Beat (Happy) in Random Position
@@ -1115,42 +1639,10 @@ MonoBehaviour:
         linkConstraint: 0
         colorIndex: 0
       - fsmEvent:
-          name: (1) Spawn Single Tap Beat (Joy) in Fixed Position
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Create Single Tap Beat (Happy) in Fixed Position
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: (2) Spawn Single Tap Beat (Sadness) in Random Position
+          name: Spawn Single Tap Beat (Sadness)
           isSystemEvent: 0
           isGlobal: 0
         toState: Create Single Tap Beat (Sadness) in Random Position
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: (3) Spawn Single Tap Beat (Sadness) in Fixed Position
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Create Single Tap Beat (Sadness) in Fixed Position
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: (4) Spawn Single Tap Beat (Slow Motion) in Random Position
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Create Single Tap Beat (Slow Motion) in Random Position
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: (5) Spawn Single Tap Beat (Slow Motion) in Fixed Position
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Create Single Tap Beat (Slow Motion) in Fixed Position
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -1198,12 +1690,6 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
           value: 1
         - useVariable: 0
           name: 
@@ -1211,24 +1697,6 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 2
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 3
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 4
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 5
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
@@ -1236,20 +1704,16 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - (0) Spawn Single Tap Beat (Joy) in Random Position
-        - (1) Spawn Single Tap Beat (Joy) in Fixed Position
-        - (2) Spawn Single Tap Beat (Sadness) in Random Position
-        - (3) Spawn Single Tap Beat (Sadness) in Fixed Position
-        - (4) Spawn Single Tap Beat (Slow Motion) in Random Position
-        - (5) Spawn Single Tap Beat (Slow Motion) in Fixed Position
+        - Spawn Single Tap Beat (Joy)
+        - Spawn Single Tap Beat (Sadness)
         byteData: 0100
-        arrayParamSizes: 0600000006000000
+        arrayParamSizes: 0200000002000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmInt
         - HutongGames.PlayMaker.FsmEvent
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1000000001000000100000000c0000001000000010000000100000001000000010000000100000000c00000017000000170000001700000017000000170000001700000001000000
+        paramDataType: 1000000001000000100000000c00000010000000100000000c000000170000001700000001000000
         paramName:
         - storeIntPayload
         - warnOnWrongType
@@ -1257,29 +1721,21 @@ MonoBehaviour:
         - compareTo
         - 
         - 
-        - 
-        - 
-        - 
-        - 
         - sendEvent
         - 
         - 
-        - 
-        - 
-        - 
-        - 
         - everyFrame
-        paramDataPos: 000000000000000001000000000000000200000003000000040000000500000006000000070000000100000000000000010000000200000003000000040000000500000001000000
-        paramByteDataSize: 000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 00000000000000000100000000000000020000000300000001000000000000000100000001000000
+        paramByteDataSize: 00000000010000000000000000000000000000000000000000000000000000000000000001000000
     - name: Create Single Tap Beat (Happy) in Random Position
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 62.289062
-        y: 392
+        x: 496
+        y: 368
         width: 371
-        height: 32
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -1292,12 +1748,20 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: FAILED TO SPAWN
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Create Single Tap Beat (Happy) in Random Position 2
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.RandomFloat
         - HutongGames.PlayMaker.Actions.RandomFloat
         - HutongGames.PlayMaker.Actions.SetVector2XY
-        - HutongGames.PlayMaker.Actions.CreateObject
+        - HutongGames.PlayMaker.Actions.PmtSpawn
         customNames:
         - 
         - 
@@ -1306,7 +1770,7 @@ MonoBehaviour:
         actionEnabled: 01010101
         actionIsOpen: 01010101
         actionStartIndex: 0000000003000000060000000b000000
-        actionHashCodes: 2ee017042ee01704f9bc2503bf83c900
+        actionHashCodes: 2ee017042ee01704f9bc250390aefe00
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -1335,7 +1799,13 @@ MonoBehaviour:
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 1
+          name: Pool Name
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Beats
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -1411,22 +1881,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {x: 0, y: 0, z: 0}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
+        stringParams:
+        - FINISHED
+        - FAILED TO SPAWN
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000000f0000000f0000000f0000000f0000000f00000025000000250000000f0000000f0000000100000013000000130000001c0000001c00000013000000
+        paramDataType: 0f0000000f0000000f0000000f0000000f0000000f00000025000000250000000f0000000f000000010000001200000013000000130000001c000000130000001700000017000000
         paramName:
         - min
         - max
@@ -1439,22 +1905,24 @@ MonoBehaviour:
         - x
         - y
         - everyFrame
+        - poolName
         - gameObject
-        - spawnPoint
-        - position
-        - rotation
-        - storeObject
-        paramDataPos: 00000000010000000200000003000000040000000500000000000000010000000600000007000000000000000000000001000000000000000100000002000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000
-    - name: Create Single Tap Beat (Happy) in Fixed Position
+        - spawnTransform
+        - OrSpawnPosition
+        - spawnedGameObject
+        - successEvent
+        - failEvent
+        paramDataPos: 000000000100000002000000030000000400000005000000000000000100000006000000070000000000000000000000000000000100000000000000020000000000000001000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000
+    - name: Create Single Tap Beat (Sadness) in Random Position
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 65
-        y: 448
-        width: 354
-        height: 32
+        x: 496
+        y: 528
+        width: 384
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -1467,19 +1935,29 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: FAILED TO SPAWN
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Create Single Tap Beat (Sadness) in Random Position 2
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.ArrayGet
-        - HutongGames.PlayMaker.Actions.CreateObject
-        - HutongGames.PlayMaker.Actions.IntAdd
+        - HutongGames.PlayMaker.Actions.RandomFloat
+        - HutongGames.PlayMaker.Actions.RandomFloat
+        - HutongGames.PlayMaker.Actions.SetVector2XY
+        - HutongGames.PlayMaker.Actions.PmtSpawn
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 00000000050000000a000000
-        actionHashCodes: 6ba59301bf83c900603dd905
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 0000000003000000060000000b000000
+        actionHashCodes: 2ee017042ee01704f9bc250390aefe00
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -1487,9 +1965,9 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 8205096214953483468, guid: 0764f0a4caec53047bf1dc1ef39316af,
+          value: {fileID: 7837418162021311204, guid: d274dd7f7fab0d940b1da37d6a543b56,
             type: 3}
-        - useVariable: 0
+        - useVariable: 1
           name: 
           tooltip: 
           showInInspector: 0
@@ -1508,73 +1986,32 @@ MonoBehaviour:
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams:
-        - variableName: Current Spawned Beat Position
-          objectType: UnityEngine.Object
-          useVariable: 1
-          type: 5
-          floatValue: 0
-          intValue: 0
-          boolValue: 0
-          stringValue: 
-          vector4Value: {x: 0, y: 0, z: 0, w: 0}
-          objectReference: {fileID: 0}
-          arrayValue:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            type: -1
-            objectTypeName: 
-            floatValues: []
-            intValues: 
-            boolValues: 
-            stringValues: []
-            vector4Values: []
-            objectReferences: []
-        fsmArrayParams:
+        fsmStringParams:
         - useVariable: 1
-          name: Beats Position
-          tooltip: 
-          showInInspector: 1
-          networkSync: 0
-          type: 5
-          objectTypeName: UnityEngine.Object
-          floatValues: []
-          intValues: 
-          boolValues: 
-          stringValues: []
-          vector4Values:
-          - {x: -8, y: 4, z: 0, w: 0}
-          - {x: -4, y: 4, z: 0, w: 0}
-          - {x: 0, y: 4, z: 0, w: 0}
-          - {x: 4, y: 4, z: 0, w: 0}
-          - {x: 8, y: 4, z: 0, w: 0}
-          - {x: 8, y: 0, z: 0, w: 0}
-          - {x: 4, y: 0, z: 0, w: 0}
-          - {x: 0, y: 0, z: 0, w: 0}
-          - {x: -4, y: 0, z: 0, w: 0}
-          - {x: -8, y: 0, z: 0, w: 0}
-          - {x: -8, y: -4, z: 0, w: 0}
-          - {x: -4, y: -4, z: 0, w: 0}
-          - {x: 0, y: -4, z: 0, w: 0}
-          - {x: 4, y: -4, z: 0, w: 0}
-          - {x: 8, y: -4, z: 0, w: 0}
-          objectReferences: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams:
-        - useVariable: 1
-          name: Current Beat Position in the Array Index
+          name: Pool Name
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: Beats
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: -8
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 8
         - useVariable: 1
-          name: Current Beat Position in the Array Index
+          name: Delta X Spawnpoint
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -1584,18 +2021,49 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
-        fsmBoolParams: []
-        fsmVector2Params: []
-        fsmVector3Params:
-        - useVariable: 1
-          name: Current Spawned Beat Position
+          value: -4
+        - useVariable: 0
+          name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 0, y: 0, z: 0}
+          value: 4
+        - useVariable: 1
+          name: Delta Y Spawnpoint
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: Delta X Spawnpoint
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: Delta Y Spawnpoint
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params:
+        - useVariable: 1
+          name: Spawnpoint Limit
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0}
         - useVariable: 1
           name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0}
+        fsmVector3Params:
+        - useVariable: 1
+          name: Spawnpoint Limit
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -1604,36 +2072,42 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
+        - FINISHED
         - 
-        byteData: 0000
+        byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 290000001000000027000000010000001700000013000000130000001c0000001c00000013000000100000001000000001000000
+        paramDataType: 0f0000000f0000000f0000000f0000000f0000000f00000025000000250000000f0000000f000000010000001200000013000000130000001c000000130000001700000017000000
         paramName:
-        - array
-        - index
-        - storeValue
+        - min
+        - max
+        - storeResult
+        - min
+        - max
+        - storeResult
+        - vector2Variable
+        - vector2Value
+        - x
+        - y
         - everyFrame
-        - indexOutOfRange
+        - poolName
         - gameObject
-        - spawnPoint
-        - position
-        - rotation
-        - storeObject
-        - intVariable
-        - add
-        - everyFrame
-        paramDataPos: 00000000000000000000000000000000000000000000000001000000000000000100000002000000010000000200000001000000
-        paramByteDataSize: 00000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000001000000
-    - name: Create Single Tap Beat (Sadness) in Random Position
+        - spawnTransform
+        - OrSpawnPosition
+        - spawnedGameObject
+        - successEvent
+        - failEvent
+        paramDataPos: 000000000100000002000000030000000400000005000000000000000100000006000000070000000000000000000000000000000100000000000000020000000000000001000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000
+    - name: Create Single Tap Beat (Happy) in Random Position 2
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 67
-        y: 506
+        x: 80
+        y: 368
         width: 384
         height: 32
       isBreakpoint: 0
@@ -1670,7 +2144,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 7837418162021311204, guid: d274dd7f7fab0d940b1da37d6a543b56,
+          value: {fileID: 8205096214953483468, guid: 0764f0a4caec53047bf1dc1ef39316af,
             type: 3}
         - useVariable: 1
           name: 
@@ -1802,195 +2276,14 @@ MonoBehaviour:
         - storeObject
         paramDataPos: 00000000010000000200000003000000040000000500000000000000010000000600000007000000000000000000000001000000000000000100000002000000
         paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000
-    - name: Create Single Tap Beat (Sadness) in Fixed Position
+    - name: Create Single Tap Beat (Sadness) in Random Position 2
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 66
-        y: 561.125
-        width: 367
-        height: 32
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: Get Koreography Event Payload
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.ArrayGet
-        - HutongGames.PlayMaker.Actions.CreateObject
-        - HutongGames.PlayMaker.Actions.IntAdd
-        customNames:
-        - 
-        - 
-        - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 00000000050000000a000000
-        actionHashCodes: 6ba59301bf83c900603dd905
-        unityObjectParams: []
-        fsmGameObjectParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 7837418162021311204, guid: d274dd7f7fab0d940b1da37d6a543b56,
-            type: 3}
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        fsmOwnerDefaultParams: []
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams:
-        - variableName: Current Spawned Beat Position
-          objectType: UnityEngine.Object
-          useVariable: 1
-          type: 5
-          floatValue: 0
-          intValue: 0
-          boolValue: 0
-          stringValue: 
-          vector4Value: {x: 0, y: 0, z: 0, w: 0}
-          objectReference: {fileID: 0}
-          arrayValue:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            type: -1
-            objectTypeName: 
-            floatValues: []
-            intValues: 
-            boolValues: 
-            stringValues: []
-            vector4Values: []
-            objectReferences: []
-        fsmArrayParams:
-        - useVariable: 1
-          name: Beats Position
-          tooltip: 
-          showInInspector: 1
-          networkSync: 0
-          type: 5
-          objectTypeName: UnityEngine.Object
-          floatValues: []
-          intValues: 
-          boolValues: 
-          stringValues: []
-          vector4Values:
-          - {x: -8, y: 4, z: 0, w: 0}
-          - {x: -4, y: 4, z: 0, w: 0}
-          - {x: 0, y: 4, z: 0, w: 0}
-          - {x: 4, y: 4, z: 0, w: 0}
-          - {x: 8, y: 4, z: 0, w: 0}
-          - {x: 8, y: 0, z: 0, w: 0}
-          - {x: 4, y: 0, z: 0, w: 0}
-          - {x: 0, y: 0, z: 0, w: 0}
-          - {x: -4, y: 0, z: 0, w: 0}
-          - {x: -8, y: 0, z: 0, w: 0}
-          - {x: -8, y: -4, z: 0, w: 0}
-          - {x: -4, y: -4, z: 0, w: 0}
-          - {x: 0, y: -4, z: 0, w: 0}
-          - {x: 4, y: -4, z: 0, w: 0}
-          - {x: 8, y: -4, z: 0, w: 0}
-          objectReferences: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams:
-        - useVariable: 1
-          name: Current Beat Position in the Array Index
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: Current Beat Position in the Array Index
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        fsmBoolParams: []
-        fsmVector2Params: []
-        fsmVector3Params:
-        - useVariable: 1
-          name: Current Spawned Beat Position
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams:
-        - 
-        byteData: 0000
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 290000001000000027000000010000001700000013000000130000001c0000001c00000013000000100000001000000001000000
-        paramName:
-        - array
-        - index
-        - storeValue
-        - everyFrame
-        - indexOutOfRange
-        - gameObject
-        - spawnPoint
-        - position
-        - rotation
-        - storeObject
-        - intVariable
-        - add
-        - everyFrame
-        paramDataPos: 00000000000000000000000000000000000000000000000001000000000000000100000002000000010000000200000001000000
-        paramByteDataSize: 00000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000001000000
-    - name: Create Single Tap Beat (Slow Motion) in Random Position
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 69
-        y: 621
-        width: 400
+        x: 64
+        y: 528
+        width: 397
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -2026,7 +2319,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 3430330167130168331, guid: f800cfb5bfe83d449ab49406c73775c4,
+          value: {fileID: 7837418162021311204, guid: d274dd7f7fab0d940b1da37d6a543b56,
             type: 3}
         - useVariable: 1
           name: 
@@ -2158,210 +2451,20 @@ MonoBehaviour:
         - storeObject
         paramDataPos: 00000000010000000200000003000000040000000500000000000000010000000600000007000000000000000000000001000000000000000100000002000000
         paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000
-    - name: Create Single Tap Beat (Slow Motion) in Fixed Position
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 67
-        y: 683
-        width: 393
-        height: 32
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: Get Koreography Event Payload
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.ArrayGet
-        - HutongGames.PlayMaker.Actions.CreateObject
-        - HutongGames.PlayMaker.Actions.IntAdd
-        customNames:
-        - 
-        - 
-        - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 00000000050000000a000000
-        actionHashCodes: 6ba59301bf83c900603dd905
-        unityObjectParams: []
-        fsmGameObjectParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 3430330167130168331, guid: f800cfb5bfe83d449ab49406c73775c4,
-            type: 3}
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        fsmOwnerDefaultParams: []
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams:
-        - variableName: Current Spawned Beat Position
-          objectType: UnityEngine.Object
-          useVariable: 1
-          type: 5
-          floatValue: 0
-          intValue: 0
-          boolValue: 0
-          stringValue: 
-          vector4Value: {x: 0, y: 0, z: 0, w: 0}
-          objectReference: {fileID: 0}
-          arrayValue:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            type: -1
-            objectTypeName: 
-            floatValues: []
-            intValues: 
-            boolValues: 
-            stringValues: []
-            vector4Values: []
-            objectReferences: []
-        fsmArrayParams:
-        - useVariable: 1
-          name: Beats Position
-          tooltip: 
-          showInInspector: 1
-          networkSync: 0
-          type: 5
-          objectTypeName: UnityEngine.Object
-          floatValues: []
-          intValues: 
-          boolValues: 
-          stringValues: []
-          vector4Values:
-          - {x: -8, y: 4, z: 0, w: 0}
-          - {x: -4, y: 4, z: 0, w: 0}
-          - {x: 0, y: 4, z: 0, w: 0}
-          - {x: 4, y: 4, z: 0, w: 0}
-          - {x: 8, y: 4, z: 0, w: 0}
-          - {x: 8, y: 0, z: 0, w: 0}
-          - {x: 4, y: 0, z: 0, w: 0}
-          - {x: 0, y: 0, z: 0, w: 0}
-          - {x: -4, y: 0, z: 0, w: 0}
-          - {x: -8, y: 0, z: 0, w: 0}
-          - {x: -8, y: -4, z: 0, w: 0}
-          - {x: -4, y: -4, z: 0, w: 0}
-          - {x: 0, y: -4, z: 0, w: 0}
-          - {x: 4, y: -4, z: 0, w: 0}
-          - {x: 8, y: -4, z: 0, w: 0}
-          objectReferences: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams:
-        - useVariable: 1
-          name: Current Beat Position in the Array Index
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: Current Beat Position in the Array Index
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        fsmBoolParams: []
-        fsmVector2Params: []
-        fsmVector3Params:
-        - useVariable: 1
-          name: Current Spawned Beat Position
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams:
-        - 
-        byteData: 0000
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 290000001000000027000000010000001700000013000000130000001c0000001c00000013000000100000001000000001000000
-        paramName:
-        - array
-        - index
-        - storeValue
-        - everyFrame
-        - indexOutOfRange
-        - gameObject
-        - spawnPoint
-        - position
-        - rotation
-        - storeObject
-        - intVariable
-        - add
-        - everyFrame
-        paramDataPos: 00000000000000000000000000000000000000000000000001000000000000000100000002000000010000000200000001000000
-        paramByteDataSize: 00000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
-    - name: (0) Spawn Single Tap Beat (Joy) in Random Position
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: (1) Spawn Single Tap Beat (Joy) in Fixed Position
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: (2) Spawn Single Tap Beat (Sadness) in Random Position
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: (3) Spawn Single Tap Beat (Sadness) in Fixed Position
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: (4) Spawn Single Tap Beat (Slow Motion) in Random Position
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: (5) Spawn Single Tap Beat (Slow Motion) in Fixed Position
+    - name: FAILED TO SPAWN
       isSystemEvent: 0
       isGlobal: 0
     - name: Pass Integer Data
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Spawn Single Tap Beat (Joy)
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Spawn Single Tap Beat (Sadness)
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []
@@ -2393,7 +2496,13 @@ MonoBehaviour:
         networkSync: 0
         value: 0
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Pool Name
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: Beats
       vector2Variables:
       - useVariable: 1
         name: Spawnpoint Limit
@@ -2447,8 +2556,8 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000
-    description: 
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000
+    description: This script handles how objects are spawned in the scene.
     docUrl: 
     showStateLabel: 0
     maxLoopCount: 0
@@ -2462,7 +2571,7 @@ MonoBehaviour:
     RestartOnEnable: 1
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 3
+    editorFlags: 2
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
@@ -2492,6 +2601,80 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!1001 &1665511461
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2179856793993042945, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
+        type: 3}
+      propertyPath: m_Name
+      value: Starting Beat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179856793993042950, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
+        type: 3}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
+      value: 
+      objectReference: {fileID: 622836468}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64, type: 3}
 --- !u!1 &1726478518
 GameObject:
   m_ObjectHideFlags: 0
@@ -2608,105 +2791,7 @@ Transform:
   - {fileID: 1528476082}
   - {fileID: 622836469}
   - {fileID: 776942688}
+  - {fileID: 1089097165}
   m_Father: {fileID: 1897713808}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &5061812440122535810
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2179856793993042945, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_Name
-      value: Starting Beat
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179856793993042945, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_TagString
-      value: Beat
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179856793993042948, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179856793993042950, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: fsm.states.Array.data[2].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
-      value: 
-      objectReference: {fileID: 622836468}
-    - target: {fileID: 2179856793993042951, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: be671b3265fac9a46941269ec985b269, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b8a4e0ee8b55fd54f8cf2db8a5c63d64, type: 3}
