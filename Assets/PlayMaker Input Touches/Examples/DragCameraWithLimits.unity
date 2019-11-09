@@ -1,0 +1,1726 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &4
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 1
+    m_BakeResolution: 50
+    m_AtlasSize: 1024
+    m_AO: 1
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 0
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 1
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 512
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 0
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 0
+--- !u!196 &5
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666666
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &37265332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 37265333}
+  - component: {fileID: 37265335}
+  - component: {fileID: 37265336}
+  - component: {fileID: 37265334}
+  - component: {fileID: 37265337}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &37265333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37265332}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &37265334
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37265332}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &37265335
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37265332}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &37265336
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37265332}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &37265337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37265332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 0
+    usedInTemplate: {fileID: 0}
+    name: FSM
+    startState: ' '
+    states:
+    - name: ' '
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 56
+        y: 104
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: Does the user drags me?
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 104
+        y: 280
+        width: 246
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.InputTouchesGetDraggingInfo
+        - HutongGames.PlayMaker.Actions.Vector2toVector3
+        - HutongGames.PlayMaker.Actions.ScreenPick
+        - HutongGames.PlayMaker.Actions.GameObjectCompare
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000050000000900000016000000
+        actionHashCodes: beac48bd681b754549c0139db81f8bad
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: pick
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: pick
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 000000000000000001706f736974696f6e000000000000000001000100000000010000000001000000000000000001706f736974696f6e00000000000000000000000001706f7300000000000000000000000000000000000001706f730000000001000000000100000000c842000001000000000000000000000000010000000000000000000000000100000000010000000001446964205069636b00
+        arrayParamSizes: 00000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmInt
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 2500000025000000110000001000000010000000250000001c0000000f000000010000001c0000000f0000000f000000110000000f00000011000000130000001c0000001c0000000f0000000c0000001100000001000000140000001300000017000000170000001100000001000000
+        paramName:
+        - position
+        - delta
+        - isMouse
+        - fingerCount
+        - index
+        - vector2
+        - vector3
+        - zValue
+        - everyFrame
+        - screenVector
+        - screenX
+        - screenY
+        - normalized
+        - rayDistance
+        - storeDidPickObject
+        - storeGameObject
+        - storePoint
+        - storeNormal
+        - storeDistance
+        - layerMask
+        - invertMask
+        - everyFrame
+        - gameObjectVariable
+        - compareTo
+        - equalEvent
+        - notEqualEvent
+        - storeResult
+        - everyFrame
+        paramDataPos: 00000000110000001a0000001c000000210000002600000037000000470000004c0000004d0000005d0000006200000067000000690000006e00000000000000700000007d0000008a000000000000008f0000009100000000000000010000009200000092000000920000009c000000
+        paramByteDataSize: 110000000900000002000000050000000500000011000000100000000500000001000000100000000500000005000000020000000500000002000000000000000d0000000d00000005000000000000000200000001000000000000000000000000000000000000000a00000001000000
+    - name: drag
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 424
+        y: 280
+        width: 202
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.InputTouchesGetDraggingInfo
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: beac48bd
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 000000000000000001706f736974696f6e000000000000000001000100000000010000000001
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 2500000025000000110000001000000010000000
+        paramName:
+        - position
+        - delta
+        - isMouse
+        - fingerCount
+        - index
+        paramDataPos: 00000000110000001a0000001c00000021000000
+        paramByteDataSize: 1100000009000000020000000500000005000000
+    - name: stop dragging
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 112
+        y: 192
+        width: 232
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    events:
+    - name: INPUT TOUCHES / DRAGGING
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / DRAGGING END
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / DRAGGING START
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: YES
+      isSystemEvent: 0
+      isGlobal: 0
+    globalTransitions:
+    - fsmEvent:
+        name: INPUT TOUCHES / DRAGGING START
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: Does the user drags me?
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: INPUT TOUCHES / DRAGGING END
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: stop dragging
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: INPUT TOUCHES / DRAGGING
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: drag
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: Did Pick
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: tapped
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      stringVariables: []
+      vector2Variables:
+      - useVariable: 1
+        name: position
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {x: 0, y: 0}
+      vector3Variables:
+      - useVariable: 1
+        name: pos
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {x: 0, y: 0, z: 0}
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables:
+      - useVariable: 1
+        name: pick
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 1
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
+--- !u!1001 &688435370
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 6dd078d3a8246964992d19e7f40ab74b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.94754648
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6dd078d3a8246964992d19e7f40ab74b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .267986029
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6dd078d3a8246964992d19e7f40ab74b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -.0731485486
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6dd078d3a8246964992d19e7f40ab74b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6dd078d3a8246964992d19e7f40ab74b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6dd078d3a8246964992d19e7f40ab74b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6dd078d3a8246964992d19e7f40ab74b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6dd078d3a8246964992d19e7f40ab74b, type: 2}
+--- !u!1001 &696065092
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -153.630615
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -358.921814
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -127.244263
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: RawEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: Swipe
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: Pinch
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: Rotate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: Tap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: DualTap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: Charging
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: Dragging
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: DualCharging
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: DualDragging
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: debug
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: on
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isOn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: ShortTap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isLongTap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isDoubleTap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: LongTap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: DoubleTap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: DualShortTap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isDualLongTap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isDualDoubleTap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: DualLongTap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: DualDoubleTap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isSwipe
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isPinch
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isRotate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isDragging
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isCharging
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isDualDragging
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isDualCharging
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isDualShortTap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: On
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isShortTap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: Down
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isDown
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: Up
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isUp
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: MultiTap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: _isMultiTap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: fsm.ExposedEvents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: fsm.events.Array.size
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: fsm.events.Array.data[18].name
+      value: INPUT TOUCHES / SWIPE RIGHT
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: fsm.events.Array.data[13].name
+      value: INPUT TOUCHES / SWIPE DOWN
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: fsm.events.Array.data[14].name
+      value: INPUT TOUCHES / SWIPE LEFT
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: fsm.events.Array.data[15].name
+      value: INPUT TOUCHES / SWIPE RIGHT
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: fsm.events.Array.data[16].name
+      value: INPUT TOUCHES / SWIPE UP
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: fsm.events.Array.data[17].name
+      value: INPUT TOUCHES / UP
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: fsm.events.Array.data[19].name
+      value: INPUT TOUCHES / SWIPE UP
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: fsm.events.Array.data[10].name
+      value: INPUT TOUCHES / DOWN
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: fsm.events.Array.data[11].name
+      value: INPUT TOUCHES / ON
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: fsm.events.Array.data[12].name
+      value: INPUT TOUCHES / SHORT TAP
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+      propertyPath: fsm.events.Array.data[20].name
+      value: INPUT TOUCHES / UP
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1607cd628c916448c9c330ab56189e22, type: 3}
+--- !u!1 &1356873959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1356873960}
+  - component: {fileID: 1356873961}
+  m_Layer: 0
+  m_Name: PlayMakerGUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1356873960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356873959}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1356873961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356873959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -73581967, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewOnGUI: 1
+  enableGUILayout: 1
+  drawStateLabels: 0
+  enableStateLabelsInBuilds: 0
+  GUITextureStateLabels: 1
+  GUITextStateLabels: 1
+  filterLabelsWithDistance: 0
+  maxLabelDistance: 10
+  controlMouseCursor: 1
+  labelScale: 1
+--- !u!1 &1960619192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1960619193}
+  - component: {fileID: 1960619194}
+  - component: {fileID: 1960619196}
+  - component: {fileID: 1960619197}
+  - component: {fileID: 1960619195}
+  - component: {fileID: 1960619199}
+  - component: {fileID: 1960619198}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1960619193
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960619192}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &1960619194
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960619192}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 100
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &1960619195
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960619192}
+  m_Enabled: 1
+--- !u!92 &1960619196
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960619192}
+  m_Enabled: 1
+--- !u!124 &1960619197
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960619192}
+  m_Enabled: 1
+--- !u!114 &1960619198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960619192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 0
+    usedInTemplate: {fileID: 0}
+    name: Camera movement
+    startState: move
+    states:
+    - name: move
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 56
+        y: 104
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.FloatOperator
+        - HutongGames.PlayMaker.Actions.FloatAdd
+        - HutongGames.PlayMaker.Actions.FloatClamp
+        - HutongGames.PlayMaker.Actions.SetPosition
+        - HutongGames.PlayMaker.Actions.FloatMultiply
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0101010101
+        actionStartIndex: 0000000005000000090000000d00000015000000
+        actionHashCodes: e075084022e8952201546a388b80e9a579fc1ded
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00000000014d6178206f6666736574000080bf000200000000000000014d696e204f6666736574010000000001746f74616c206472616700000000014d6f766520537065656401010000000001746f74616c206472616700000000014d696e204f666673657400000000014d6178206f666673657401000000000000000000000000010000000001746f74616c20647261670000000001000000000101000000010000000000014d6f76652053706565646666663f0144616d70696e6701
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f0000000f000000070000000f000000010000000f0000000f00000001000000010000000f0000000f0000000f00000001000000140000001c0000000f0000000f0000000f0000000700000001000000010000000f0000000f00000001000000
+        paramName:
+        - float1
+        - float2
+        - operation
+        - storeResult
+        - everyFrame
+        - floatVariable
+        - add
+        - everyFrame
+        - perSecond
+        - floatVariable
+        - minValue
+        - maxValue
+        - everyFrame
+        - gameObject
+        - vector
+        - x
+        - y
+        - z
+        - space
+        - everyFrame
+        - lateUpdate
+        - floatVariable
+        - multiplyBy
+        - everyFrame
+        paramDataPos: 000000000f000000140000001800000027000000280000003700000046000000470000004800000057000000660000007500000000000000760000008300000092000000970000009c000000a0000000a1000000a2000000b1000000bd000000
+        paramByteDataSize: 0f00000005000000040000000f000000010000000f0000000f00000001000000010000000f0000000f0000000f00000001000000000000000d0000000f00000005000000050000000400000001000000010000000f0000000c00000001000000
+    events: []
+    globalTransitions: []
+    variables:
+      floatVariables:
+      - useVariable: 1
+        name: Damping
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0.9
+      - useVariable: 1
+        name: Max offset
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 5
+      - useVariable: 1
+        name: Min Offset
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Move Speed
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Position x
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: total drag
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 1
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
+--- !u!114 &1960619199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960619192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 0
+    usedInTemplate: {fileID: 0}
+    name: Dragging receiver
+    startState: ' '
+    states:
+    - name: ' '
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 56
+        y: 104
+        width: 232
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: set the movespeed
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 328
+        y: 104
+        width: 202
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.InputTouchesGetDraggingInfo
+        - HutongGames.PlayMaker.Actions.Vector2Multiply
+        - HutongGames.PlayMaker.Actions.GetVector2XY
+        - HutongGames.PlayMaker.Actions.SetFsmFloat
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 0000000005000000080000000c000000
+        actionHashCodes: beac48bdec25acc834b21c943373b91f
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Camera movement
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Move Speed
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00000000000000000100000000000000000164656c746100010000000001000000000100000000000000000164656c74610000003f014d756c7469706c6965720000000000000000000164656c74610000000001686f72697a6f6e74616c2064656c74610000000001000000000001686f72697a6f6e74616c2064656c746100
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 2500000025000000110000001000000010000000250000000f00000001000000250000000f0000000f000000010000001400000012000000120000000f00000001000000
+        paramName:
+        - position
+        - delta
+        - isMouse
+        - fingerCount
+        - index
+        - vector2Variable
+        - multiplyBy
+        - everyFrame
+        - vector2Variable
+        - storeX
+        - storeY
+        - everyFrame
+        - gameObject
+        - fsmName
+        - variableName
+        - setValue
+        - everyFrame
+        paramDataPos: 000000000900000017000000190000001e000000230000003100000040000000410000004f00000064000000690000000000000000000000010000006a0000007f000000
+        paramByteDataSize: 090000000e0000000200000005000000050000000e0000000f000000010000000e0000001500000005000000010000000000000000000000000000001500000001000000
+    events:
+    - name: INPUT TOUCHES / DRAGGING
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / DRAGGING END
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / DRAGGING START
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: YES
+      isSystemEvent: 0
+      isGlobal: 0
+    globalTransitions:
+    - fsmEvent:
+        name: INPUT TOUCHES / DRAGGING
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: set the movespeed
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: INPUT TOUCHES / DRAGGING END
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: ' '
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    variables:
+      floatVariables:
+      - useVariable: 1
+        name: Multiplier
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: -0.5
+      - useVariable: 1
+        name: horizontal delta
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables:
+      - useVariable: 1
+        name: delta
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {x: 0, y: 0}
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 1
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
+--- !u!1 &2076427423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 6dd078d3a8246964992d19e7f40ab74b,
+    type: 2}
+  m_PrefabInstance: {fileID: 688435370}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2076427424}
+  - component: {fileID: 2076427425}
+  - component: {fileID: 2076427426}
+  - component: {fileID: 2076427427}
+  - component: {fileID: 2076427428}
+  - component: {fileID: 2076427429}
+  - component: {fileID: 2076427430}
+  - component: {fileID: 2076427431}
+  m_Layer: 0
+  m_Name: Gesture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2076427424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 6dd078d3a8246964992d19e7f40ab74b,
+    type: 2}
+  m_PrefabInstance: {fileID: 688435370}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076427423}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.9475465, y: 0.26798603, z: -0.07314855}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2076427425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 11400010, guid: 6dd078d3a8246964992d19e7f40ab74b,
+    type: 2}
+  m_PrefabInstance: {fileID: 688435370}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076427423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00a390417897c340bbf8fd339cfe346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2076427426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 11400008, guid: 6dd078d3a8246964992d19e7f40ab74b,
+    type: 2}
+  m_PrefabInstance: {fileID: 688435370}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076427423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8281800407ed5d1408686832a1da2974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSmoothFrameCount: 4
+  rotationSmoothing: 1
+--- !u!114 &2076427427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 11400006, guid: 6dd078d3a8246964992d19e7f40ab74b,
+    type: 2}
+  m_PrefabInstance: {fileID: 688435370}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076427423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0e82b68544a0114a898971502a5d596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSwipeDuration: 0.5
+  minSpeed: 50
+  minDistance: 15
+  maxDirectionChange: 60
+  onlyFireWhenLiftCursor: 0
+  enableMultiSwipe: 1
+  minDurationBetweenSwipe: 0.5
+--- !u!114 &2076427428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 11400004, guid: 6dd078d3a8246964992d19e7f40ab74b,
+    type: 2}
+  m_PrefabInstance: {fileID: 688435370}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076427423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e308dccfc7b864bb588b7090a90358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableMultiTapFilter: 0
+  maxTapDisplacementAllowance: 12
+  shortTapTime: 0.2
+  longTapTime: 0.8
+  multiTapInterval: 0.35
+  multiTapPosSpacing: 20
+  maxMultiTapCount: 2
+  chargeMode: 0
+  minChargeTime: 0.15
+  maxChargeTime: 2
+  maxFingerGroupDist: 200
+--- !u!114 &2076427429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 11400002, guid: 6dd078d3a8246964992d19e7f40ab74b,
+    type: 2}
+  m_PrefabInstance: {fileID: 688435370}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076427423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf2a06dda4e473448c1440db3cdf92d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDragDistance: 15
+  enableMultiDrag: 0
+  fireOnDraggingWhenNotMoving: 0
+--- !u!114 &2076427430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 11400000, guid: 6dd078d3a8246964992d19e7f40ab74b,
+    type: 2}
+  m_PrefabInstance: {fileID: 688435370}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076427423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4644228101ae7244b98ea543054eb3e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useDPIScaling: 1
+  defaultDPI: 441
+--- !u!114 &2076427431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076427423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b89f7eaf3d934c11965bd4567ebc555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDragDistance: 15
+  enableMultiDrag: 0
+  fireOnDraggingWhenNotMoving: 0

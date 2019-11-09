@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1223223985, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
+  m_Name: Stage 1 Track (Checkpoints)
+  m_EditorClassIdentifier: 
+  mEventID: Stage 1 Track (Checkpoints)
+  mEventList:
+  - mStartSample: 898537
+    mEndSample: 898537
+  - mStartSample: 3483900
+    mEndSample: 3483900
+  - mStartSample: 5451862
+    mEndSample: 5451862
+  - mStartSample: 8031712
+    mEndSample: 8031712
+  _SerializedPayloadTypes:
+  - SonicBloom.Koreo.TextPayload
+  _ColorPayloads: []
+  _ColorPayloadIdxs: 
+  _CurvePayloads: []
+  _CurvePayloadIdxs: 
+  _FloatPayloads: []
+  _FloatPayloadIdxs: 
+  _GradientPayloads: []
+  _GradientPayloadIdxs: 
+  _IntPayloads: []
+  _IntPayloadIdxs: 
+  _SpectrumPayloads: []
+  _SpectrumPayloadIdxs: 
+  _TextPayloads:
+  - mTextVal: Wave 1
+  - mTextVal: Wave 2
+  - mTextVal: Wave 3
+  - mTextVal: Final Wave
+  _TextPayloadIdxs: 00000000010000000200000003000000

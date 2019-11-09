@@ -1,0 +1,296 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400002}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: PlayMakerInputTouchesProxy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -153.63062, y: -358.9218, z: -127.24426}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f43416e72dcca4cb2b3704948720f41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SwipeAngleThreshold: 10
+  debug: 1
+  On: 0
+  _isOn: 0
+  Up: 0
+  _isUp: 0
+  Down: 0
+  _isDown: 0
+  Swipe: 0
+  _isSwipe: 0
+  Pinch: 0
+  _isPinch: 0
+  Rotate: 0
+  _isRotate: 0
+  Charging: 0
+  _isCharging: 0
+  Dragging: 0
+  _isDragging: 0
+  MultiFingersCharging: 0
+  _isMultiFingersCharging: 0
+  MultiFingersDragging: 0
+  _isMultiFingersDragging: 0
+  MultiTap: 0
+  _isMultiTap: 0
+  LongTap: 0
+  _isLongTap: 0
+  MultiFingersMultiTap: 0
+  _isMultiFingersMultiTap: 0
+  MultiFingersLongTap: 0
+  _isMultiFingersLongTap: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 2
+    usedInTemplate: {fileID: 0}
+    name: PlayMakerInputTouchesProxy
+    startState: State 1
+    states:
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 51
+        y: 175
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    events:
+    - name: INPUT TOUCHES / CHARGING
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / CHARGING END
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / CHARGING START
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / DOUBLE TAP
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / DRAGGING
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / DRAGGING END
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / DRAGGING START
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / LONG TAP
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / MF / CHARGING
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / MF / CHARGING END
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / MF / CHARGING START
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / MF / DOUBLE TAP
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / MF / DRAGGING
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / MF / DRAGGING END
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / MF / DRAGGING START
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / MF / LONG TAP
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / MF / MULTI TAP
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / MF / SHORT TAP
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / MULTI TAP
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / PINCH
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / ROTATE
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / SHORT TAP
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / SWIPE
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / SWIPE DOWN
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / SWIPE LEFT
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / SWIPE RIGHT
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: INPUT TOUCHES / SWIPE UP
+      isSystemEvent: 0
+      isGlobal: 1
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 
+    description: 'DO NOT MODIFY THIS FSM
+
+
+      This is a proxy to bind InputTouches framework with Playmaker. It is used to
+      declared all the global events related to InputTouches framework.'
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 1
+    EnableBreakpoints: 1
+    editorFlags: 1
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0

@@ -42,3 +42,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Backround
+    uniqueID: 3031927157
+    locked: 0
+  - name: Beats
+    uniqueID: 3289437719
+    locked: 0
+  - name: UI
+    uniqueID: 1056971397
+    locked: 0

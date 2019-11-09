@@ -1,0 +1,278 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa6100d5219ab549810cea623d2c4c5, type: 3}
+  m_Name: MultiDevicePreviewConfig
+  m_EditorClassIdentifier: 
+  m_Config:
+    m_DestinationFolder: 3
+    m_RelativePath: Screenshots/
+    m_RootedPath: 
+    m_FileName: '{name}'
+    m_OverrideFiles: 0
+    m_FileFormat: 0
+    m_JPGQuality: 75
+    m_CaptureMode: 0
+    m_MultisamplingAntiAliasing: 8
+    m_ColorFormat: 0
+    m_RecomputeAlphaLayer: 0
+    m_ShotMode: 0
+    m_MaxBurstShotsNumber: 20
+    m_ShotTimeStep: 0.25
+    m_CameraMode: 0
+    m_ExportToDifferentLayers: 0
+    m_Cameras:
+    - m_Active: 1
+      m_Camera: {fileID: 0}
+      m_ClearSettings: 1
+      m_ClearFlags: 2
+      m_BackgroundColor: {r: 0.24137926, g: 0, b: 1, a: 1}
+      m_CullingSettings: 0
+      m_CullingMask: -1
+      m_FOVSettings: 0
+      m_FOV: 70
+    m_ResolutionCaptureMode: 1
+    m_Resolutions:
+    - m_Active: 1
+      m_Width: 1136
+      m_Height: 640
+      m_Scale: 1
+      m_Orientation: 0
+      m_ResolutionName: Apple iPhone SE
+      m_Category: Collections/Varied shapes
+      m_PPI: 326
+      m_ForcedUnityPPI: 0
+      m_DeviceCanvas: {fileID: 22395588, guid: 7e06e659b2f74b44fa6bbb4c56bd80fd, type: 3}
+      m_Ratio: 71:40
+      m_FileName: 
+      m_IgnoreOrientation: 0
+    - m_Active: 1
+      m_Width: 1334
+      m_Height: 750
+      m_Scale: 1
+      m_Orientation: 0
+      m_ResolutionName: Apple iPhone 6S
+      m_Category: Collections/Varied shapes
+      m_PPI: 326
+      m_ForcedUnityPPI: 0
+      m_DeviceCanvas: {fileID: 22351862, guid: d894d1e726c463043a0c33e203b8e6c4, type: 3}
+      m_Ratio: 667:375
+      m_FileName: 
+      m_IgnoreOrientation: 0
+    - m_Active: 1
+      m_Width: 2436
+      m_Height: 1125
+      m_Scale: 1
+      m_Orientation: 0
+      m_ResolutionName: Apple iPhone X
+      m_Category: Collections/Varied shapes
+      m_PPI: 459
+      m_ForcedUnityPPI: 0
+      m_DeviceCanvas: {fileID: 22333258, guid: 6c29deb4f6d80514899d6ab08938d695, type: 3}
+      m_Ratio: 812:375
+      m_FileName: 
+      m_IgnoreOrientation: 0
+    - m_Active: 1
+      m_Width: 1280
+      m_Height: 720
+      m_Scale: 1
+      m_Orientation: 0
+      m_ResolutionName: Samsung Galaxy J7
+      m_Category: Collections/Varied shapes
+      m_PPI: 267
+      m_ForcedUnityPPI: 0
+      m_DeviceCanvas: {fileID: 22301964, guid: ce854df06008c4a40bbadf5e88f4a7fd, type: 3}
+      m_Ratio: 16:9
+      m_FileName: 
+      m_IgnoreOrientation: 0
+    - m_Active: 1
+      m_Width: 2560
+      m_Height: 1440
+      m_Scale: 1
+      m_Orientation: 0
+      m_ResolutionName: Samsung Galaxy S7
+      m_Category: Collections/Varied shapes
+      m_PPI: 576
+      m_ForcedUnityPPI: 0
+      m_DeviceCanvas: {fileID: 22341352, guid: 28f67e677b33e3f44a3ab50405a0e743, type: 3}
+      m_Ratio: 16:9
+      m_FileName: 
+      m_IgnoreOrientation: 0
+    - m_Active: 1
+      m_Width: 1280
+      m_Height: 720
+      m_Scale: 1
+      m_Orientation: 0
+      m_ResolutionName: Samsung Galaxy A5
+      m_Category: Collections/Varied shapes
+      m_PPI: 294
+      m_ForcedUnityPPI: 0
+      m_DeviceCanvas: {fileID: 22301964, guid: b04c75e8ab0b1cf40b278ec37518d8dd, type: 3}
+      m_Ratio: 16:9
+      m_FileName: 
+      m_IgnoreOrientation: 0
+    - m_Active: 0
+      m_Width: 2048
+      m_Height: 1536
+      m_Scale: 1
+      m_Orientation: 0
+      m_ResolutionName: Apple iPad Mini 4
+      m_Category: Collections/Varied shapes
+      m_PPI: 324
+      m_ForcedUnityPPI: 0
+      m_DeviceCanvas: {fileID: 22375798, guid: a1c0ba3ad48fdc042b7cc7ce0d217be7, type: 3}
+      m_Ratio: 4:3
+      m_FileName: 
+      m_IgnoreOrientation: 0
+    - m_Active: 0
+      m_Width: 2388
+      m_Height: 1668
+      m_Scale: 1
+      m_Orientation: 0
+      m_ResolutionName: Apple iPad Pro 11 (2018)
+      m_Category: Collections/Varied shapes
+      m_PPI: 265
+      m_ForcedUnityPPI: 0
+      m_DeviceCanvas: {fileID: 22375798, guid: ca56440c6e6947b4d8bdd85dd0db525d, type: 3}
+      m_Ratio: 199:139
+      m_FileName: 
+      m_IgnoreOrientation: 0
+    - m_Active: 0
+      m_Width: 2732
+      m_Height: 2048
+      m_Scale: 1
+      m_Orientation: 0
+      m_ResolutionName: Apple iPad Pro 12.9 (2018)
+      m_Category: Collections/Varied shapes
+      m_PPI: 265
+      m_ForcedUnityPPI: 0
+      m_DeviceCanvas: {fileID: 22375798, guid: ca56440c6e6947b4d8bdd85dd0db525d, type: 3}
+      m_Ratio: 683:512
+      m_FileName: 
+      m_IgnoreOrientation: 0
+    - m_Active: 1
+      m_Width: 1920
+      m_Height: 1080
+      m_Scale: 1
+      m_Orientation: 0
+      m_ResolutionName: Android Phones (Full HD)
+      m_Category: Stores/PlayStore
+      m_PPI: 0
+      m_ForcedUnityPPI: 0
+      m_DeviceCanvas: {fileID: 0}
+      m_Ratio: 16:9
+      m_FileName: 
+      m_IgnoreOrientation: 0
+    - m_Active: 1
+      m_Width: 1920
+      m_Height: 1080
+      m_Scale: 1
+      m_Orientation: 0
+      m_ResolutionName: 1920x1080
+      m_Category: Default
+      m_PPI: 0
+      m_ForcedUnityPPI: 0
+      m_DeviceCanvas: {fileID: 0}
+      m_Ratio: 16:9
+      m_FileName: 
+      m_IgnoreOrientation: 0
+    m_GameViewResolution:
+      m_Active: 1
+      m_Width: 983
+      m_Height: 701
+      m_Scale: 1
+      m_Orientation: 0
+      m_ResolutionName: GameView
+      m_Category: Custom
+      m_PPI: 0
+      m_ForcedUnityPPI: 0
+      m_DeviceCanvas: {fileID: 0}
+      m_Ratio: 4:3
+      m_FileName: C:\Users\iron\Pictures/Screenshots/983x701-1 GameView LANDSCAPE.png
+      m_IgnoreOrientation: 0
+    m_CaptureActiveUICanvas: 1
+    m_Overlays:
+    - m_Canvas: {fileID: 0}
+      m_Active: 0
+    m_CompositionMode: 0
+    m_Composers: []
+    m_BatchMode: 0
+    m_Batches: []
+    m_ShowGuidesInPreview: 0
+    m_GuideCanvas: {fileID: 0}
+    m_GuidesColor: {r: 1, g: 1, b: 1, a: 1}
+    m_ShowPreview: 1
+    m_PreviewSize: 1
+    m_PreviewInGameViewWhilePlaying: 0
+    m_StopTimeOnCapture: 0
+    m_PlaySoundOnCapture: 0
+    m_ShotSound: {fileID: 0}
+    m_CaptureHotkey:
+      m_Shift: 0
+      m_Control: 0
+      m_Alt: 0
+      m_Key: 0
+    m_UpdatePreviewHotkey:
+      m_Shift: 0
+      m_Control: 0
+      m_Alt: 0
+      m_Key: 0
+    m_AlignHotkey:
+      m_Shift: 0
+      m_Control: 0
+      m_Alt: 0
+      m_Key: 0
+    m_PauseHotkey:
+      m_Shift: 0
+      m_Control: 0
+      m_Alt: 0
+      m_Key: 0
+    m_GameViewResizingWaitingMode: 0
+    m_ResizingWaitingTime: 1
+    m_ResizingWaitingFrames: 2
+    m_ShowDestination: 1
+    m_ShowName: 1
+    m_ShowCaptureMode: 1
+    m_ShowResolutions: 1
+    m_ShowCameras: 1
+    m_ShowCanvas: 1
+    m_ShowComposition: 1
+    m_ShowBatches: 1
+    m_ShowPreviewGUI: 1
+    m_ShowCapture: 1
+    m_ShowHotkeys: 1
+    m_ShowGallery: 1
+    m_ShowUtils: 1
+    m_ShowUsage: 1
+    m_ShowDelay: 1
+  m_ScreenPPI: 109
+  m_ZoomScrollSpeed: 0.01
+  m_MarginHorizontal: 10
+  m_MarginVertical: 30
+  m_GalleryPaddingVertical: 10
+  m_GalleryTextHeight: 30
+  m_GalleryBorderSize: 2
+  m_Selected: 4
+  m_PreviewGalleryZoom: 1
+  m_PreviewZoom: 1.26
+  m_RefreshMode: 0
+  m_AutoRefresh: 0
+  m_RefreshDelay: 1
+  m_GalleryDisplayMode: 2
+  m_PreviewDisplayMode: 2
+  m_DrawingMode: 2
+  m_DeviceRendererCamera: {fileID: 2009090, guid: 277a80b5609ce0441a8f4b6e014524f1,
+    type: 3}
+  m_DefaultDeviceCanvas: {fileID: 22333258, guid: 1c3e759c6432d0d45bbb466445ec03c5,
+    type: 3}
+  m_TransparentDeviceBackground: 0
+  m_ShowGallery: 1
+  m_ExpandDevices: 0
