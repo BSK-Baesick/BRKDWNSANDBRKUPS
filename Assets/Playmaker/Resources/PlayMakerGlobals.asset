@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: PlayMakerGlobals
   m_EditorClassIdentifier: 
   variables:
-    floatVariables: []
+    floatVariables:
+    - useVariable: 1
+      name: Time Scale
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 1
     intVariables:
     - useVariable: 1
       name: EMOPoints
@@ -21,6 +27,48 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 0
+    - useVariable: 1
+      name: Crying
+      tooltip: The first emotion at the start of the game
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Sad
+      tooltip: Emotion when player gets 25% of the score
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Confused
+      tooltip: Emotion when player score reaches 50% of the maximum score
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Happy
+      tooltip: Emotion when score reaches 75%
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Say Cheese!
+      tooltip: Emotion when score reaches 85%
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: In Love
+      tooltip: Emotion when player reaches perfect socre
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Highest Score
+      tooltip: Highest Score the player can get
+      showInInspector: 0
+      networkSync: 0
+      value: 193000
     boolVariables:
     - useVariable: 1
       name: hasThePartyStarted
@@ -28,19 +76,147 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 0
+    - useVariable: 1
+      name: Ai The A.I (Artificial Intelligence)
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: gameIsPaused
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: isSlowMotionEnabled
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: isFastForwardEnabled?
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     stringVariables: []
     vector2Variables: []
     vector3Variables: []
-    colorVariables: []
+    colorVariables:
+    - useVariable: 1
+      name: Current Color
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {r: 0, g: 0, b: 0, a: 1}
     rectVariables: []
     quaternionVariables: []
-    gameObjectVariables: []
+    gameObjectVariables:
+    - useVariable: 1
+      name: GameObject Picked Up
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
     objectVariables: []
     materialVariables: []
     textureVariables: []
-    arrayVariables: []
+    arrayVariables:
+    - useVariable: 1
+      name: Colors
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      type: 7
+      objectTypeName: UnityEngine.Object
+      floatValues: []
+      intValues: 
+      boolValues: 
+      stringValues: []
+      vector4Values:
+      - {x: 0.6745098, y: 0.027450982, z: 0.9490197, w: 1}
+      - {x: 0.39607847, y: 0.019607844, z: 0.6509804, w: 1}
+      - {x: 0.46564615, y: 0.9056604, z: 0.47913224, w: 1}
+      - {x: 0.28627452, y: 0.45098042, z: 0.9490197, w: 1}
+      - {x: 0.29411766, y: 0.69803923, z: 0.9490197, w: 1}
+      - {x: 0.7490196, y: 0.27058825, z: 0.5803922, w: 1}
+      - {x: 0.7960785, y: 0.40000004, z: 0.85098046, w: 1}
+      - {x: 0.6585411, y: 0.990566, z: 0.042052314, w: 1}
+      - {x: 0.32156864, y: 0.6039216, z: 0.85098046, w: 1}
+      - {x: 0.9490197, y: 0.5137255, z: 0.47450984, w: 1}
+      - {x: 0.087086126, y: 0.7974565, z: 0.9716981, w: 1}
+      - {x: 0.454902, y: 0.87843144, z: 0.8313726, w: 1}
+      - {x: 0.95294124, y: 0.9843138, z: 1, w: 1}
+      - {x: 0.9803922, y: 0.5647059, z: 0.15686275, w: 1}
+      - {x: 1, y: 0, z: 0.26666668, w: 1}
+      - {x: 0.9490197, y: 0.019607844, z: 0.5294118, w: 1}
+      - {x: 0.85098046, y: 0.4666667, z: 0.8235295, w: 1}
+      - {x: 0.86651874, y: 1, z: 0, w: 1}
+      - {x: 0.9150943, y: 0.5663582, z: 0.14244394, w: 1}
+      - {x: 0.57254905, y: 0.40000004, z: 0.9490197, w: 1}
+      - {x: 0.16078432, y: 0.2784314, z: 0.9490197, w: 1}
+      - {x: 0.0627451, y: 0.16078432, z: 0.45098042, w: 1}
+      - {x: 0.06666667, y: 0.4901961, z: 0.7490196, w: 1}
+      - {x: 0.16862746, y: 0.85098046, z: 0.65882355, w: 1}
+      - {x: 0.058823533, y: 0.9490197, z: 0.62352943, w: 1}
+      objectReferences: []
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000
-  events: []
+    - Game Info
+    - Game Scene
+    - Game State
+    - GameTune
+    - Player Info
+    - Score Counter
+    variableCategoryIDs: 0100000001000000060000000600000006000000060000000600000006000000010000000300000004000000030000000300000000000000050000000200000002000000
+  events:
+  - GAME OBJECT LONG PICKED
+  - GAME OBJECT PICKED
+  - INPUT TOUCHES / LONG TAP
+  - INPUT TOUCHES / SHORT TAP
+  - INPUT TOUCHES / CHARGING
+  - INPUT TOUCHES / CHARGING END
+  - INPUT TOUCHES / CHARGING START
+  - INPUT TOUCHES / DOUBLE TAP
+  - INPUT TOUCHES / DRAGGING
+  - INPUT TOUCHES / DRAGGING END
+  - INPUT TOUCHES / DRAGGING START
+  - INPUT TOUCHES / MF / CHARGING
+  - INPUT TOUCHES / MF / CHARGING END
+  - INPUT TOUCHES / DOWN
+  - INPUT TOUCHES / ON
+  - INPUT TOUCHES / SWIPE DOWN
+  - INPUT TOUCHES / SWIPE LEFT
+  - INPUT TOUCHES / SWIPE RIGHT
+  - INPUT TOUCHES / SWIPE UP
+  - INPUT TOUCHES / UP
+  - INPUT TOUCHES / MF / CHARGING START
+  - INPUT TOUCHES / MF / DOUBLE TAP
+  - INPUT TOUCHES / MF / DRAGGING
+  - INPUT TOUCHES / MF / DRAGGING END
+  - INPUT TOUCHES / MF / DRAGGING START
+  - INPUT TOUCHES / MF / LONG TAP
+  - INPUT TOUCHES / MF / MULTI TAP
+  - INPUT TOUCHES / MF / SHORT TAP
+  - INPUT TOUCHES / MULTI TAP
+  - INPUT TOUCHES / PINCH
+  - INPUT TOUCHES / ROTATE
+  - INPUT TOUCHES / SWIPE
+  - INTERACT WITH STARTING BEAT
+  - INTERACT WITH SINGLE TAP BEAT (SADNESS)
+  - INTERACT
+  - Interact
+  - CONFUSED
+  - CRYING
+  - HAPPY
+  - SAD
+  - SAY CHEESE
+  - SLOW MOTION
+  - GameTune
+  - Pause
+  - Play
+  - Slow Motion
+  - Reset Time Slow
+  - Reset Time v1

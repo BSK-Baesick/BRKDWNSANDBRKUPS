@@ -1,0 +1,463 @@
+fileFormatVersion: 2
+guid: 7c4c9173324f97c4791ec5f74c0bb1c1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8648697361671313627
+    second: hourglass-sprite-icon-vector-14676474_0
+  - first:
+      213: 666764669821764104
+    second: hourglass-sprite-icon-vector-14676474_1
+  - first:
+      213: 3792093258750618421
+    second: hourglass-sprite-icon-vector-14676474_2
+  - first:
+      213: -8255766665423301354
+    second: hourglass-sprite-icon-vector-14676474_3
+  - first:
+      213: -1661440134928175641
+    second: hourglass-sprite-icon-vector-14676474_4
+  - first:
+      213: 2673784511627547555
+    second: hourglass-sprite-icon-vector-14676474_5
+  - first:
+      213: -4111579202339782626
+    second: hourglass-sprite-icon-vector-14676474_6
+  - first:
+      213: -1542567304743989235
+    second: hourglass-sprite-icon-vector-14676474_7
+  - first:
+      213: -1795633050518698311
+    second: hourglass-sprite-icon-vector-14676474_8
+  - first:
+      213: -3894717799391134803
+    second: hourglass-sprite-icon-vector-14676474_9
+  - first:
+      213: 5770571391830080496
+    second: hourglass-sprite-icon-vector-14676474_10
+  - first:
+      213: -2335435249293900201
+    second: hourglass-sprite-icon-vector-14676474_11
+  - first:
+      213: -8331592390331867253
+    second: hourglass-sprite-icon-vector-14676474_12
+  - first:
+      213: 1950373411718687997
+    second: hourglass-sprite-icon-vector-14676474_13
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hourglass-sprite-icon-vector-14676474_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 613
+        width: 130
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc34819ffb21e547a19c02206530236
+      internalID: 8648697361671313627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hourglass-sprite-icon-vector-14676474_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 613
+        width: 130
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9bd34ebd3ab71948b44e105d92c865f
+      internalID: 666764669821764104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hourglass-sprite-icon-vector-14676474_2
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 613
+        width: 130
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02de77dee0c47a34a81f8d3cd137d5d5
+      internalID: 3792093258750618421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hourglass-sprite-icon-vector-14676474_3
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 613
+        width: 130
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c992e2a34ec5e9447bddaa36ac6284f7
+      internalID: -8255766665423301354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hourglass-sprite-icon-vector-14676474_4
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 613
+        width: 130
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ceb4f339c728b4f8869d4899422bd1
+      internalID: -1661440134928175641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hourglass-sprite-icon-vector-14676474_5
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 613
+        width: 130
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbc91523f2ae27449c1a26123ce31db
+      internalID: 2673784511627547555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hourglass-sprite-icon-vector-14676474_6
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 287
+        width: 174
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8899001320ad9b6418104e2d031539ee
+      internalID: -4111579202339782626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hourglass-sprite-icon-vector-14676474_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 278
+        width: 216
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1493cdc3d8c5d44bc55399e49c437c
+      internalID: -1542567304743989235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hourglass-sprite-icon-vector-14676474_8
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 288
+        width: 243
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec69bbd9235f9c48a84e2062d213f0a
+      internalID: -1795633050518698311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hourglass-sprite-icon-vector-14676474_9
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 309
+        width: 236
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a9dfe9f1c0c7f4993372756693b304
+      internalID: -3894717799391134803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hourglass-sprite-icon-vector-14676474_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 210
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef5d9723e45bf744926629e5eb26732
+      internalID: 5770571391830080496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hourglass-sprite-icon-vector-14676474_11
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 12
+        width: 243
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea394a2c41ae094cabca980697e467f
+      internalID: -2335435249293900201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hourglass-sprite-icon-vector-14676474_12
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 0
+        width: 218
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115c821887e2d294fb8515ec387c7faf
+      internalID: -8331592390331867253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hourglass-sprite-icon-vector-14676474_13
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 35
+        width: 130
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1925d5608ef7be149b583061ef516fcf
+      internalID: 1950373411718687997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

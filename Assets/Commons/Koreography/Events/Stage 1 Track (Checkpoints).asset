@@ -37,8 +37,8 @@ MonoBehaviour:
   _SpectrumPayloads: []
   _SpectrumPayloadIdxs: 
   _TextPayloads:
-  - mTextVal: Wave 1
-  - mTextVal: Wave 2
-  - mTextVal: Wave 3
-  - mTextVal: Final Wave
+  - mTextVal: WAVE 1
+  - mTextVal: WAVE 2
+  - mTextVal: WAVE 3
+  - mTextVal: FINAL WAVE
   _TextPayloadIdxs: 00000000010000000200000003000000

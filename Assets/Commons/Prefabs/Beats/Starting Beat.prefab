@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7794085613079420786}
   - component: {fileID: 2179856793993042950}
   - component: {fileID: 542025891}
+  - component: {fileID: 385613702}
   m_Layer: 0
   m_Name: Starting Beat
   m_TagString: Beat
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1005529577
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 83838e968d058594488c66834e2645ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -95,12 +96,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5133333
+  m_Radius: 0.79
 --- !u!82 &7794085613079420786
 AudioSource:
   m_ObjectHideFlags: 0
@@ -213,49 +214,31 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: Interaction
-    startState: On Tap
+    startState: Blank
     states:
-    - name: On Tap
-      description: When the player taps the Starting Beat...
+    - name: Blank
+      description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 50
-        y: 100
-        width: 198
-        height: 32
+        x: 64
+        y: 112
+        width: 100
+        height: 16
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: Play Music
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
+      transitions: []
       actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.TouchObject2dEvent
-        customNames:
-        - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: d86f9901
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 2179856793993042945}
+        fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -268,62 +251,30 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams: []
-        fsmIntParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
+        fsmIntParams: []
         fsmBoolParams: []
-        fsmVector2Params:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0}
+        fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams:
-        - FINISHED
-        - 
-        - 
-        - 
-        - 
+        stringParams: []
         byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001000000017000000170000001700000017000000170000001000000025000000
-        paramName:
-        - gameObject
-        - fingerId
-        - touchBegan
-        - touchMoved
-        - touchStationary
-        - touchEnded
-        - touchCanceled
-        - storeFingerId
-        - storeHitPoint
-        paramDataPos: 000000000000000000000000010000000200000003000000040000000100000000000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     - name: Destroy
       description: Destroy the Starting Beat
-      colorIndex: 0
+      colorIndex: 6
       position:
         serializedVersion: 2
-        x: 864
-        y: 576
+        x: 976
+        y: 432
         width: 140
         height: 16
       isBreakpoint: 0
@@ -332,13 +283,15 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.DestroySelf
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 62f95203
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 27fbe10362f95203
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -356,6 +309,18 @@ MonoBehaviour:
         fsmFloatParams: []
         fsmIntParams: []
         fsmBoolParams:
+        - useVariable: 1
+          name: Did Pick Object?
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -368,23 +333,26 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 
+        byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 11000000
+        paramDataType: 11000000110000000100000011000000
         paramName:
+        - boolVariable
+        - boolValue
+        - everyFrame
         - detachChildren
-        paramDataPos: 00000000
-        paramByteDataSize: 00000000
+        paramDataPos: 00000000010000000000000002000000
+        paramByteDataSize: 00000000000000000100000000000000
     - name: Play Music
       description: Play the stage soundtrack
-      colorIndex: 0
+      colorIndex: 3
       position:
         serializedVersion: 2
-        x: 170
-        y: 227
+        x: 240
+        y: 112
         width: 150.5
         height: 32
       isBreakpoint: 0
@@ -466,11 +434,11 @@ MonoBehaviour:
         paramByteDataSize: 000000000000000000000000
     - name: Start Game
       description: Tell the Game Manager that the Starting Beat has been tapped
-      colorIndex: 0
+      colorIndex: 1
       position:
         serializedVersion: 2
-        x: 364
-        y: 338
+        x: 476
+        y: 194
         width: 272.5
         height: 32
       isBreakpoint: 0
@@ -543,11 +511,11 @@ MonoBehaviour:
         paramByteDataSize: 000000000000000001000000
     - name: Play VFX
       description: Play the Particle Effects
-      colorIndex: 0
+      colorIndex: 1
       position:
         serializedVersion: 2
-        x: 672
-        y: 464
+        x: 784
+        y: 320
         width: 142.5
         height: 32
       isBreakpoint: 0
@@ -643,14 +611,34 @@ MonoBehaviour:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
+    - name: Check
+      isSystemEvent: 0
+      isGlobal: 0
     - name: INPUT TOUCHES / SHORT TAP
       isSystemEvent: 0
       isGlobal: 1
-    globalTransitions: []
+    - name: Interact
+      isSystemEvent: 0
+      isGlobal: 1
+    globalTransitions:
+    - fsmEvent:
+        name: Interact
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: Play Music
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
     variables:
       floatVariables: []
       intVariables: []
-      boolVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: Did Pick Object?
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       stringVariables: []
       vector2Variables:
       - useVariable: 1
@@ -663,7 +651,13 @@ MonoBehaviour:
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
-      gameObjectVariables: []
+      gameObjectVariables:
+      - useVariable: 1
+        name: 
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
       objectVariables: []
       materialVariables: []
       textureVariables: []
@@ -671,7 +665,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000
+      variableCategoryIDs: 000000000000000000000000
     description: This FSM handles the interaction logic of this beat.
     docUrl: 
     showStateLabel: 0
@@ -681,7 +675,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -821,6 +815,45 @@ MonoBehaviour:
   optionalRotationMode: 0
   optionalScrambleMode: 0
   optionalString: 
+--- !u!114 &385613702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2179856793993042945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83dcd8dace8b7fe449d796b980cb121d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeselectOnUp: 0
+  HideWithFinger: 0
+  IsolateSelectingFingers: 0
+  onSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2179856793993042950}
+        m_MethodName: SendEvent
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Interact
+          m_BoolArgument: 0
+        m_CallState: 2
+  onSelectSet:
+    m_PersistentCalls:
+      m_Calls: []
+  onSelectUp:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeselect:
+    m_PersistentCalls:
+      m_Calls: []
+  isSelected: 1
 --- !u!1001 &7718450011926300229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -876,6 +909,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4259755202149456, guid: 0cead53e87f84244f89103723e50ed7d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4259755202149456, guid: 0cead53e87f84244f89103723e50ed7d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 199766823003600684, guid: 0cead53e87f84244f89103723e50ed7d,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -884,7 +925,7 @@ PrefabInstance:
     - target: {fileID: 199766823003600684, guid: 0cead53e87f84244f89103723e50ed7d,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 199680037700097238, guid: 0cead53e87f84244f89103723e50ed7d,
         type: 3}
@@ -894,7 +935,7 @@ PrefabInstance:
     - target: {fileID: 199680037700097238, guid: 0cead53e87f84244f89103723e50ed7d,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 199625903625426570, guid: 0cead53e87f84244f89103723e50ed7d,
         type: 3}
@@ -904,7 +945,7 @@ PrefabInstance:
     - target: {fileID: 199625903625426570, guid: 0cead53e87f84244f89103723e50ed7d,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cead53e87f84244f89103723e50ed7d, type: 3}

@@ -1,83 +1,345 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28c15245-d1d0-49bc-9b52-1e44f798ecb0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NOTA/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NOTA/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NOTA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NOTA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/KaraokeDemo.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full/StarlitKoreography.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full/StarlitKoreography.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full/StarlitKoreographyExtended.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full/StarlitKoreographyExtended.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full/StarlitTrackBump.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full/StarlitTrackBump.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full/StarlitTrackColorJump.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full/StarlitTrackColorJump.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full/StarlitTrackColorSmooth.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full/StarlitTrackColorSmooth.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full/StarlitTrackOnomatopoeia.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full/StarlitTrackOnomatopoeia.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full/StarlitTrackScaler.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full/StarlitTrackScaler.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full/StarlitTrackSpread.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Koreography/Starlit Black - Full/StarlitTrackSpread.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Music.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Music/Starlit Black.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Music/Starlit Black.mid.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Music/Starlit Black.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Music/Starlit Black.ogg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Music/Stems.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Music/Stems/Starlit Black - Stem - Harmony.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Music/Stems/Starlit Black - Stem - Harmony.ogg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Music/Stems/Starlit Black - Stem - Melody.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Music/Stems/Starlit Black - Stem - Melody.ogg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Music/Stems/Starlit Black - Stem - Percussion.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Music/Stems/Starlit Black - Stem - Percussion.ogg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Prefabs/01_Balls.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Prefabs/01_Balls.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Prefabs/02_Particles.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Prefabs/02_Particles.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Prefabs/03_Cubes.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Prefabs/03_Cubes.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Prefabs/04_IMGUI Text.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Prefabs/04_IMGUI Text.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Prefabs/05_Spotlights.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Prefabs/05_Spotlights.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/RhythmGameDemo.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scenes/Demo1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scenes/Demo1.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scenes/Demo2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scenes/Demo2.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scenes/Demo3.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scenes/Demo3.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scenes/Demo4.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scenes/Demo4.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scenes/Demo5.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scenes/Demo5.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scenes/Demo6.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scenes/Demo6.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scenes/FullDemo.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scenes/FullDemo.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scripts/ColorAdjuster.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scripts/ColorAdjuster.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scripts/CubeScaler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scripts/CubeScaler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scripts/DemoControlsUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scripts/DemoControlsUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scripts/EmitParticlesOnSpan.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scripts/EmitParticlesOnSpan.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scripts/MusicalImpulse.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scripts/MusicalImpulse.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scripts/TempoSwitch.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scripts/TempoSwitch.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scripts/UIMessageSetter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Koreographer/Demos/Scripts/UIMessageSetter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/Fonts/GROBOLD SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/Fonts/GROBOLD SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/Koreography/Asset File/Stage 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/Koreography/Asset File/Stage 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/Koreography/Events/Stage 1 Track (Checkpoints).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/Koreography/Events/Stage 1 Track (Checkpoints).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/Koreography/Events/Stage 1 Track.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/Koreography/Events/Stage 1 Track.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/Prefabs/Beats/Single Tap Beat (Happy).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/Prefabs/Beats/Single Tap Beat (Happy).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/Prefabs/Beats/Single Tap Beat (Sadness).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/Prefabs/Beats/Single Tap Beat (Sadness).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/Prefabs/Beats/Starting Beat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/Prefabs/Beats/Starting Beat.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/Scenes/Splash Screen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/Scenes/Splash Screen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/Scenes/Stage 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/Scenes/Stage 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/Sprites/Beats/happy.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/Sprites/Beats/happy.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/Sprites/Beats/play.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/Sprites/Beats/play.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/Sprites/Beats/sad.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/Sprites/Beats/sad.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/Sprites/UI/png/elements/HUD/Bar/Blank.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/Sprites/UI/png/elements/HUD/Bar/Blank.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/Sprites/UI/png/elements/others/Border/Border (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/Sprites/UI/png/elements/others/Border/Border (1).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/EpicVictoryEffects/Prefabs/BG_Effects/Firework_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/EpicVictoryEffects/Prefabs/BG_Effects/Firework_01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/BlackHole/BlackHoleRed.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/BlackHole/BlackHoleRed.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Checkpoint/CheckpointRed.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Checkpoint/CheckpointRed.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Combat/Death.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Combat/Death/DeathAcid.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Combat/Death/DeathAcid.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Combat/Death/DeathEvil.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Combat/Death/DeathEvil.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Combat/Death/DeathFire.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Combat/Death/DeathFire.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Combat/Death/DeathFrost.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Combat/Death/DeathFrost.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Combat/Death/DeathLightning.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Combat/Death/DeathLightning.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Combat/Death/DeathNormal.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Combat/Death/DeathNormal.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Combat/Death/DeathSuperEvil.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Combat/Death/DeathSuperEvil.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Loot/LootEssence/LootEssenceBlue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/VFX/Add-ons/Polygon Arsenal/Prefabs/Interactive/Loot/LootEssence/LootEssenceBlue.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Particle FX/GroundSlam/GroundSlamBlue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/VFX/Particle FX/GroundSlam/GroundSlamBlue.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Particle FX/GroundSlam/GroundSlamRed.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/VFX/Particle FX/GroundSlam/GroundSlamRed.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Particle FX/GroundSlam/GroundSlamYellow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/VFX/Particle FX/GroundSlam/GroundSlamYellow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Particle FX/Spawn/SpawnBlue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/VFX/Particle FX/Spawn/SpawnBlue.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Commons/VFX/Particle FX/Spawn/SpawnYellow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Commons/VFX/Particle FX/Spawn/SpawnYellow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Examples/DragCameraWithLimits.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Examples/DragCameraWithLimits.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Examples/DragRotateSmoothEnd.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Examples/DragRotateSmoothEnd.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Examples/PickObjectManager.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Examples/PickObjectManager.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions/InputTouchesGetChargingInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions/InputTouchesGetChargingInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions/InputTouchesGetDraggingInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions/InputTouchesGetDraggingInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions/InputTouchesGetMagnitude.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions/InputTouchesGetMagnitude.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions/InputTouchesGetPinchInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions/InputTouchesGetPinchInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions/InputTouchesGetPosition.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions/InputTouchesGetPosition.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions/InputTouchesGetRotateInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions/InputTouchesGetRotateInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions/InputTouchesGetSwipeInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions/InputTouchesGetSwipeInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions/InputTouchesGetTapInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Actions/InputTouchesGetTapInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Editor/PlayMakerInputTouchesEditorUtility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Editor/PlayMakerInputTouchesEditorUtility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Editor/PlayMakerInputTouchesProxyEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/Editor/PlayMakerInputTouchesProxyEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/PlayMakerInputTouchesProxy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Internal/PlayMakerInputTouchesProxy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Resources/PlayMakerInputTouchesProxy.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayMaker Input Touches/Resources/PlayMakerInputTouchesProxy.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Playmaker/Resources/PlayMakerGlobals.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Playmaker/Resources/PlayMakerGlobals.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/FPSDisplay.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/FPSDisplay/FpsDisplay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/FPSDisplay/FpsDisplay.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/FPSDisplay/FrameRateDisplay.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/FPSDisplay/FrameRateDisplay.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/InputTouches_v1.2_Documentation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/InputTouches_v1.2_Documentation.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/ArrowDown.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/ArrowDown.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/ArrowLeft.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/ArrowLeft.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/ArrowRight.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/ArrowRight.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/ArrowUp.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/ArrowUp.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/Crosshair.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/Crosshair.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/Red.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/Red.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/TextSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/TextSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/Title.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/Title.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/Trail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/Trail.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/Trail.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/Trail.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/grid.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/grid.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/grid.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/grid.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/icon.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Mat&amp;Texture/icon.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Prefabs/DemoPrefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Prefabs/DemoPrefabs/ProjectileObject.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Prefabs/DemoPrefabs/ProjectileObject.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Prefabs/DemoPrefabs/Target.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Prefabs/DemoPrefabs/Target.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Prefabs/InputTouches.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Prefabs/InputTouches.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/Demo/Back.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/Demo/Back.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/Demo/ChargeModeSwitcher.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/Demo/ChargeModeSwitcher.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/Demo/DemoMenuUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/Demo/DemoMenuUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/Demo/DemoSceneUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/Demo/DemoSceneUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/DemoSceneTarget.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/DemoSceneTarget.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/FlickDemo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/FlickDemo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/ObjectDetector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/ObjectDetector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/OrbitCam.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/OrbitCam.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/RTSCam.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/RTSCam.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/RTSCam_RotateObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/RTSCam_RotateObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/RotateObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/RotateObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/SwipeDemo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/SwipeDemo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/TapDemo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/TapDemo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/Turret.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Demo/Turret.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Editor/InputTouches.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Editor/InputTouches/DragDetectorEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Editor/InputTouches/DragDetectorEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Editor/InputTouches/DualFingerDetectorEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Editor/InputTouches/DualFingerDetectorEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Editor/InputTouches/ITGestureEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Editor/InputTouches/ITGestureEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Editor/InputTouches/MenuExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Editor/InputTouches/MenuExtension.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Editor/InputTouches/SupportContactWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Editor/InputTouches/SupportContactWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Editor/InputTouches/SwipeDetectorEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Editor/InputTouches/SwipeDetectorEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Editor/InputTouches/TapDetectorEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/Editor/InputTouches/TapDetectorEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches/BasicDetector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches/BasicDetector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches/DragDetector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches/DragDetector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches/DualFingerDetector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches/DualFingerDetector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches/IT_Gesture.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches/IT_Gesture.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches/IT_Utility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches/IT_Utility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches/PublicClass.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches/PublicClass.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches/SwipeDetector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches/SwipeDetector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches/TapDetector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/InputTouches/Scripts/InputTouches/TapDetector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/PlayMaker/Actions/Time/Wait.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tools/PlayMaker/Actions/Time/Wait.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Shared.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Shared/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Shared/Scripts/SortingLayerDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Shared/Scripts/SortingLayerDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Known Issues.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Known Issues.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Desktop) 1xLight +Color.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Desktop) 1xLight +Color.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Desktop) 1xLight High Contrast.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Desktop) 1xLight High Contrast.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Desktop) 1xLight.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Desktop) 1xLight.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Desktop) 2xLight +Color.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Desktop) 2xLight +Color.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Desktop) 2xLight High Contrast.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Desktop) 2xLight High Contrast.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Desktop) 2xLight.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Desktop) 2xLight.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Desktop) 3xLight +Color.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Desktop) 3xLight +Color.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Desktop) 3xLight.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Desktop) 3xLight.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) 1xLight.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) 1xLight.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) 2xLight.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) 2xLight.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) 3xLight.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) 3xLight.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Light A.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Light A.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Light B.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Light B.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Light C.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Light C.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Light D 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Light D 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Light D 2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Light D 2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Light D.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Light D.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Light NoTexture.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Light NoTexture.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Particle A.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Particle A.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Particle G.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D (Mobile) Particle G.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D Depth Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Materials/ZippyLights2D Depth Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Desktop) Depth Sample (new).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Desktop) Depth Sample (new).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Desktop) Simple White (new).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Desktop) Simple White (new).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Blood Alert 2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Blood Alert 2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Blood Alert.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Blood Alert.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Fruity Rainbow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Fruity Rainbow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Headlights.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Headlights.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Intense Yellow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Intense Yellow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Pulse Flash.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Pulse Flash.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Rainbow Spot.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Rainbow Spot.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Simple White (new).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Simple White (new).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Simply Colorful.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Simply Colorful.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Smexxy Purps.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Smexxy Purps.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Soft Yellow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Soft Yellow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Teal Terror.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Teal Terror.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Toxic Sludge.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Toxic Sludge.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Ultrapurple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) Ultrapurple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) lolB.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Prefabs/ZippyLights2D (Mobile) lolB.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Scripts/Editor/ZippyLights2DEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Scripts/Editor/ZippyLights2DEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Scripts/SetRenderQueue.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Scripts/SetRenderQueue.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Scripts/ZippyLights2D.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Scripts/ZippyLights2D.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2D DepthShader.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2D DepthShader.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop1L.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop1L.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop1LC.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop1LC.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop1LStencil.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop1LStencil.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop2L.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop2L.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop2LC.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop2LC.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop2LStencil.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop2LStencil.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop3L.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop3L.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop3LC.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop3LC.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop3LStencil.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktop3LStencil.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktopC.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DDesktopC.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DMobile.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DMobile.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DMobile1L.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DMobile1L.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DMobile1LC.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DMobile1LC.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DMobile2L.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DMobile2L.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DMobile2LC.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DMobile2LC.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DMobile3L.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Shaders/ZippyLight2DMobile3L.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures/ZippyLights2D Light A 1.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures/ZippyLights2D Light A 1.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures/ZippyLights2D Light A.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures/ZippyLights2D Light A.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures/ZippyLights2D Light B.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures/ZippyLights2D Light B.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures/ZippyLights2D Light C.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures/ZippyLights2D Light C.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures/ZippyLights2D Light D.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures/ZippyLights2D Light D.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures/ZippyLights2D Light E.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures/ZippyLights2D Light E.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures/ZippyLights2D Light F.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures/ZippyLights2D Light F.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures/ZippyLights2D Light G.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/Textures/ZippyLights2D Light G.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/ZippyLights2D _ Depth Mask Documentation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/ZippyLights2D _ Depth Mask Documentation.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/ZippyLights2D _ Documentation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tools/Zippy 2D/Zippy Lights 2D/ZippyLights2D _ Documentation.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,10 +350,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Tools/PlayMaker/Actions/Time/Wait.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tools/PlayMaker/Actions/GameObject/FindGameObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tools/PlayMaker/Actions/UnityObject/GetComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tools/PlayMaker/Actions/BaseBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/TestScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tools/PlayMaker/Actions/BaseBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tools/PlayMaker/Actions/Time/Wait.cs" />
       </list>
     </option>
   </component>
@@ -150,6 +420,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572088028810</updated>
       <workItem from="1572088088462" duration="2758000" />
+      <workItem from="1574066053909" duration="7864000" />
     </task>
     <servers />
   </component>
@@ -163,7 +434,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

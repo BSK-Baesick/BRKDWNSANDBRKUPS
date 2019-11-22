@@ -1,5 +1,6 @@
 // (c) Copyright HutongGames, LLC 2010-2013. All rights reserved.
 
+using Chronos;
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
@@ -8,6 +9,7 @@ namespace HutongGames.PlayMaker.Actions
     [Tooltip("Delays a State from finishing by the specified time. NOTE: Other actions continue, but FINISHED can't happen before Time.")]
     public class Wait : FsmStateAction
     {
+
         [RequiredField]
         public FsmFloat time;
         public FsmEvent finishEvent;
@@ -15,6 +17,8 @@ namespace HutongGames.PlayMaker.Actions
 
         private float startTime;
         private float timer;
+
+        private Timeline timeline;
 
         public override void Reset()
         {

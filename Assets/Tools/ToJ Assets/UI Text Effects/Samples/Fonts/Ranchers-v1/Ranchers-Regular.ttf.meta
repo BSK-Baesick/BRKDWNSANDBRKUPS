@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 4bead44fde530724c854b962e440d736
+timeCreated: 1450636120
+licenseType: Store
+TrueTypeFontImporter:
+  serializedVersion: 2
+  fontSize: 120
+  forceTextureCase: -1
+  characterSpacing: 1
+  characterPadding: 0
+  includeFontData: 1
+  use2xBehaviour: 0
+  fontNames: []
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

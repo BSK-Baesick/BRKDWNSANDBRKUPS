@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Beat
+  - Effects
+  - Audio Manager
+  - Time Manager
   layers:
   - Default
   - TransparentFX
@@ -44,6 +47,9 @@ TagManager:
     locked: 0
   - name: Backround
     uniqueID: 3031927157
+    locked: 0
+  - name: VFX
+    uniqueID: 3147171659
     locked: 0
   - name: Beats
     uniqueID: 3289437719

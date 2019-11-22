@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: 4685515578837703931}
   - component: {fileID: 114996222165681782}
   - component: {fileID: 7782263827161467441}
+  - component: {fileID: 4347459225604493109}
+  - component: {fileID: 861352765385978631}
   m_Layer: 0
   m_Name: Single Tap Beat (Sadness)
   m_TagString: Beat
@@ -76,7 +78,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1005529577
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d2230096b9aaaed489bf56fd4a418552, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -104,7 +106,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.85
+  m_Radius: 0.8
 --- !u!50 &3704541789670641155
 Rigidbody2D:
   serializedVersion: 4
@@ -142,117 +144,15 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: Interaction
-    startState: On Tap
+    startState: Blank
     states:
-    - name: On Tap
-      description: When the player taps the Simple Tap Beat...
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 56
-        y: 113
-        width: 208
-        height: 32
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: Decrease Score
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.TouchObject2dEvent
-        customNames:
-        - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: d86f9901
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 7837418162021311204}
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmBoolParams: []
-        fsmVector2Params:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0}
-        fsmVector3Params: []
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams:
-        - FINISHED
-        - 
-        - 
-        - 
-        - 
-        byteData: 
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 140000001000000017000000170000001700000017000000170000001000000025000000
-        paramName:
-        - gameObject
-        - fingerId
-        - touchBegan
-        - touchMoved
-        - touchStationary
-        - touchEnded
-        - touchCanceled
-        - storeFingerId
-        - storeHitPoint
-        paramDataPos: 000000000000000000000000010000000200000003000000040000000100000000000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000
     - name: Destroy
       description: Destroy the Single Tap Beat
-      colorIndex: 0
+      colorIndex: 6
       position:
         serializedVersion: 2
         x: 816
-        y: 448
+        y: 400
         width: 148
         height: 16
       isBreakpoint: 0
@@ -261,13 +161,15 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.PmtDeSpawn
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 5203fa04
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 27fbe1035203fa04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -303,6 +205,18 @@ MonoBehaviour:
           value: 0
         fsmIntParams: []
         fsmBoolParams:
+        - useVariable: 1
+          name: Did Pick Object?
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -316,27 +230,30 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - 
-        byteData: 
+        byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1200000013000000110000000f00000017000000
+        paramDataType: 1100000011000000010000001200000013000000110000000f00000017000000
         paramName:
+        - boolVariable
+        - boolValue
+        - everyFrame
         - poolName
         - gameObject
         - reParent
         - delay
         - failureEvent
-        paramDataPos: 0000000000000000000000000000000000000000
-        paramByteDataSize: 0000000000000000000000000000000000000000
+        paramDataPos: 0000000001000000000000000000000000000000020000000000000000000000
+        paramByteDataSize: 0000000000000000010000000000000000000000000000000000000000000000
     - name: Decrease Score
       description: Penalize the player for tapping this beat
-      colorIndex: 0
+      colorIndex: 3
       position:
         serializedVersion: 2
         x: 352
-        y: 240
+        y: 192
         width: 214
         height: 32
       isBreakpoint: 0
@@ -417,11 +334,11 @@ MonoBehaviour:
         paramByteDataSize: 0000000000000000040000000000000001000000
     - name: Play VFX
       description: Play particle effect
-      colorIndex: 0
+      colorIndex: 1
       position:
         serializedVersion: 2
         x: 624
-        y: 352
+        y: 304
         width: 126
         height: 32
       isBreakpoint: 0
@@ -534,6 +451,58 @@ MonoBehaviour:
         - failEvent
         paramDataPos: 00000000010000000000000000000000020000000300000000000000040000000000000001000000
         paramByteDataSize: 00000000000000000100000000000000000000000000000000000000000000000000000000000000
+    - name: Blank
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: COLLISION ENTER 2D
       isSystemEvent: 1
@@ -556,7 +525,27 @@ MonoBehaviour:
     - name: Tapped
       isSystemEvent: 0
       isGlobal: 0
-    globalTransitions: []
+    - name: INPUT TOUCHES / SHORT TAP
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Check
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Interact
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Next Event
+      isSystemEvent: 0
+      isGlobal: 0
+    globalTransitions:
+    - fsmEvent:
+        name: Interact
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: Decrease Score
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
     variables:
       floatVariables:
       - useVariable: 1
@@ -572,9 +561,21 @@ MonoBehaviour:
         networkSync: 0
         value: 0
       intVariables: []
-      boolVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: Did Pick Object?
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       stringVariables: []
-      vector2Variables: []
+      vector2Variables:
+      - useVariable: 1
+        name: Tap Position
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {x: 0, y: 0}
       vector3Variables:
       - useVariable: 1
         name: New Position
@@ -592,6 +593,12 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: {fileID: 0}
+      - useVariable: 1
+        name: 
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
       objectVariables: []
       materialVariables: []
       textureVariables: []
@@ -599,7 +606,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000
     description: This FSM handles the Starting Beat interaction/s.
     docUrl: 
     showStateLabel: 0
@@ -609,7 +616,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -621,7 +628,7 @@ MonoBehaviour:
     handleTriggerEnter2D: 0
     handleTriggerExit2D: 0
     handleTriggerStay2D: 0
-    handleCollisionEnter2D: 0
+    handleCollisionEnter2D: 1
     handleCollisionExit2D: 0
     handleCollisionStay2D: 0
     handleTriggerEnter: 0
@@ -660,16 +667,16 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: Relocate
-    startState: Check whether the beat is stacking into one another
+    startState: Overlap Check
     states:
-    - name: Check whether the beat is stacking into one another
-      description: 
-      colorIndex: 0
+    - name: Overlap Check
+      description: Check whether the beat is stacking into one another
+      colorIndex: 3
       position:
         serializedVersion: 2
         x: 50
         y: 100
-        width: 373
+        width: 250
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -759,7 +766,7 @@ MonoBehaviour:
         paramByteDataSize: 000000000400000000000000000000000000000000000000
     - name: Relocate
       description: 
-      colorIndex: 0
+      colorIndex: 6
       position:
         serializedVersion: 2
         x: 522
@@ -999,15 +1006,15 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: Self-Destruct
-    startState: Self-Destruct Timer
+    startState: GameTune Check
     states:
     - name: Self-Destruct Timer
       description: Wait before self-destruction
-      colorIndex: 0
+      colorIndex: 1
       position:
         serializedVersion: 2
-        x: 50
-        y: 100
+        x: 338
+        y: 212
         width: 188
         height: 32
       isBreakpoint: 0
@@ -1075,11 +1082,11 @@ MonoBehaviour:
         paramByteDataSize: 000000000000000001000000
     - name: Self-Destruct
       description: Destroy self
-      colorIndex: 0
+      colorIndex: 6
       position:
         serializedVersion: 2
-        x: 800
-        y: 448
+        x: 1088
+        y: 560
         width: 118
         height: 16
       isBreakpoint: 0
@@ -1159,11 +1166,11 @@ MonoBehaviour:
         paramByteDataSize: 0000000000000000000000000000000000000000
     - name: Increase Score
       description: Add points to EMOPoints
-      colorIndex: 0
+      colorIndex: 1
       position:
         serializedVersion: 2
-        x: 304
-        y: 208
+        x: 592
+        y: 320
         width: 160.5
         height: 32
       isBreakpoint: 0
@@ -1244,11 +1251,11 @@ MonoBehaviour:
         paramByteDataSize: 0000000000000000040000000000000001000000
     - name: Play VFX
       description: Play particle effects
-      colorIndex: 0
+      colorIndex: 1
       position:
         serializedVersion: 2
-        x: 592
-        y: 336
+        x: 880
+        y: 448
         width: 129.5
         height: 32
       isBreakpoint: 0
@@ -1361,9 +1368,97 @@ MonoBehaviour:
         - failEvent
         paramDataPos: 00000000010000000000000000000000020000000300000000000000040000000000000001000000
         paramByteDataSize: 00000000000000000100000000000000000000000000000000000000000000000000000000000000
+    - name: GameTune Check
+      description: Check whether the game is played by Ai the A.I or not.
+      colorIndex: 3
+      position:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 266.5
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Next Event
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Increase Score
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: False Event
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Self-Destruct Timer
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: a4c8bf00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: Ai The A.I (Artificial Intelligence)
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - Next Event
+        - False Event
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000
+        paramByteDataSize: 00000000000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
+      isGlobal: 0
+    - name: False Event
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Next Event
+      isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []
     variables:
@@ -1763,6 +1858,62 @@ MonoBehaviour:
   TargetFSMs:
   - {fileID: 6008804949078521157}
   - {fileID: 7447950702493637128}
+--- !u!114 &4347459225604493109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7837418162021311204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83dcd8dace8b7fe449d796b980cb121d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeselectOnUp: 0
+  HideWithFinger: 0
+  IsolateSelectingFingers: 0
+  onSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7447950702493637128}
+        m_MethodName: SendEvent
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Interact
+          m_BoolArgument: 0
+        m_CallState: 2
+  onSelectSet:
+    m_PersistentCalls:
+      m_Calls: []
+  onSelectUp:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeselect:
+    m_PersistentCalls:
+      m_Calls: []
+  isSelected: 1
+--- !u!114 &861352765385978631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7837418162021311204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6090da511f8374135a15dd8655adcd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _recordingInterval: 0.5
+  _mode: 1
+  _globalClockKey: Beats
+  _rewindable: 1
+  _recordingDuration: 5
 --- !u!1001 &6572492607122959060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1820,11 +1971,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709814017024902, guid: a34303283eae569419f28256bff64733, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4709814017024902, guid: a34303283eae569419f28256bff64733, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 199099998488167890, guid: a34303283eae569419f28256bff64733,
         type: 3}
@@ -1834,7 +1985,7 @@ PrefabInstance:
     - target: {fileID: 199099998488167890, guid: a34303283eae569419f28256bff64733,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 199454647888667298, guid: a34303283eae569419f28256bff64733,
         type: 3}
@@ -1844,7 +1995,7 @@ PrefabInstance:
     - target: {fileID: 199454647888667298, guid: a34303283eae569419f28256bff64733,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 199655452459897624, guid: a34303283eae569419f28256bff64733,
         type: 3}
@@ -1854,7 +2005,7 @@ PrefabInstance:
     - target: {fileID: 199655452459897624, guid: a34303283eae569419f28256bff64733,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 199832384011797922, guid: a34303283eae569419f28256bff64733,
         type: 3}
@@ -1864,7 +2015,7 @@ PrefabInstance:
     - target: {fileID: 199832384011797922, guid: a34303283eae569419f28256bff64733,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a34303283eae569419f28256bff64733, type: 3}
