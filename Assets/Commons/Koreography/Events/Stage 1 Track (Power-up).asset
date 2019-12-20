@@ -14,16 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: Stage 1 Track (Power-up)
   mEventList:
-  - mStartSample: 628425
-    mEndSample: 628425
   - mStartSample: 2712150
     mEndSample: 2712150
   - mStartSample: 3897337
     mEndSample: 3897337
   - mStartSample: 5523525
     mEndSample: 5523525
-  - mStartSample: 8285287
-    mEndSample: 8285287
   _SerializedPayloadTypes: []
   _ColorPayloads: []
   _ColorPayloadIdxs: 

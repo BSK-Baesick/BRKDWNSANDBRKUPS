@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2179856793993042950}
   - component: {fileID: 542025891}
   - component: {fileID: 385613702}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Starting Beat
   m_TagString: Beat
   m_Icon: {fileID: 0}
@@ -827,7 +827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83dcd8dace8b7fe449d796b980cb121d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeselectOnUp: 0
+  DeselectOnUp: 1
   HideWithFinger: 0
   IsolateSelectingFingers: 0
   onSelect:
@@ -853,7 +853,7 @@ MonoBehaviour:
   onDeselect:
     m_PersistentCalls:
       m_Calls: []
-  isSelected: 1
+  isSelected: 0
 --- !u!1001 &7718450011926300229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -864,6 +864,10 @@ PrefabInstance:
     - target: {fileID: 1731173506153324, guid: 0cead53e87f84244f89103723e50ed7d, type: 3}
       propertyPath: m_Name
       value: Aura Charge (Yellow)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731173506153324, guid: 0cead53e87f84244f89103723e50ed7d, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4259755202149456, guid: 0cead53e87f84244f89103723e50ed7d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -916,6 +920,18 @@ PrefabInstance:
     - target: {fileID: 4259755202149456, guid: 0cead53e87f84244f89103723e50ed7d, type: 3}
       propertyPath: m_LocalScale.y
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389610606761622, guid: 0cead53e87f84244f89103723e50ed7d, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265237367850500, guid: 0cead53e87f84244f89103723e50ed7d, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202958050825660, guid: 0cead53e87f84244f89103723e50ed7d, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 199766823003600684, guid: 0cead53e87f84244f89103723e50ed7d,
         type: 3}

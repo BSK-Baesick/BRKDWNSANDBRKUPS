@@ -1,4 +1,4 @@
-#if CHRONOS_PLAYMAKER
+﻿#if CHRONOS_PLAYMAKER
 
 using HutongGames.PlayMaker;
 
@@ -22,7 +22,6 @@ namespace Chronos.PlayMaker
 		public override void Reset()
 		{
 			gameObject = null;
-			delay = 1f;
 			scheduledEvent = null;
 		}
 

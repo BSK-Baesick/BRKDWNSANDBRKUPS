@@ -1,25 +1,24 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SplashScreenSceneManager : MonoBehaviour
+namespace BaesickEntertainment
 {
-
-    // Configuration Parameters
-
-    /// <summary>
-    /// The delay interval before the next scene loads.
-    /// </summary>
-    [SerializeField] float delayInterval = 8f;
-
-    // Start is called before the first frame update
-    void Start()
+    public class SplashScreenSceneManager : MonoBehaviour
     {
+    
+        public float delayInterval = 0f;
+        public string sceneName = null;
+    
+        // Start is called before the first frame update
+        public void Start()
+        {
             // Load next scene using the Scene Manager
             Invoke("LoadNextScene", delayInterval);
-    }
-
-    void LoadNextScene()
-    {
-            SceneManager.LoadScene(1);
-    }
+        }
+    
+        void LoadNextScene()
+        {
+            bl_SceneLoaderUtils.GetLoader.LoadLevel(sceneName);
+        }
+    }   
 }

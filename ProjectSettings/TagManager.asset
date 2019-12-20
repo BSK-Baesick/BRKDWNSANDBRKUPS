@@ -7,7 +7,8 @@ TagManager:
   - Beat
   - Effects
   - Audio Manager
-  - Time Manager
+  - Timekeeper
+  - Mood Icon
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Backround
+  - Beat
   - 
   - 
   - 
