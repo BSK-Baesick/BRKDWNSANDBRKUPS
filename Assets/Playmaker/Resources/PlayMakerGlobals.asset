@@ -68,7 +68,7 @@ MonoBehaviour:
       tooltip: Highest Score the player can get
       showInInspector: 0
       networkSync: 0
-      value: 173000
+      value: 171000
     boolVariables:
     - useVariable: 1
       name: hasThePartyStarted
@@ -96,6 +96,12 @@ MonoBehaviour:
       value: 0
     - useVariable: 1
       name: isFastForwardEnabled?
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: isPositionValid
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -154,7 +160,7 @@ MonoBehaviour:
     - GameTune
     - Player Info
     - Score Counter
-    variableCategoryIDs: 0100000001000000060000000600000006000000060000000600000006000000010000000300000004000000030000000300000003000000050000000200000002000000
+    variableCategoryIDs: 010000000100000006000000060000000600000006000000060000000600000001000000030000000400000003000000030000000300000003000000050000000200000002000000
   events:
   - GAME OBJECT LONG PICKED
   - GAME OBJECT PICKED

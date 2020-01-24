@@ -478,7 +478,6 @@ GameObject:
   - component: {fileID: 8806923308860766324}
   - component: {fileID: 8806923308860766599}
   - component: {fileID: 8806923308860766596}
-  - component: {fileID: 8806923308860766622}
   - component: {fileID: 8806923308860766617}
   - component: {fileID: 8806923308860766611}
   - component: {fileID: 8806923308860766621}
@@ -522,7 +521,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.1
+  m_Radius: 1.5
 --- !u!50 &8806923308860766324
 Rigidbody2D:
   serializedVersion: 4
@@ -893,7 +892,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetGameObject
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.PmtSpawn
-        - Chronos.PlayMaker.Schedule
+        - HutongGames.PlayMaker.Actions.EnableCollider2D
         customNames:
         - 
         - 
@@ -902,8 +901,9 @@ MonoBehaviour:
         actionEnabled: 01010101
         actionIsOpen: 01010101
         actionStartIndex: 0000000003000000080000000f000000
-        actionHashCodes: 4d51cf04b2cf100090aefe00657e6f01
-        unityObjectParams: []
+        actionHashCodes: 4d51cf04b2cf100090aefe00e834e203
+        unityObjectParams:
+        - {fileID: 0}
         fsmGameObjectParams:
         - useVariable: 1
           name: Beat Tag
@@ -922,7 +922,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 1022467295468940, guid: 3845c058642164c4aa72204c65011e98,
+          value: {fileID: 5980985340846879826, guid: f126595ebbe5faa41b696345c32c9a69,
             type: 3}
         - useVariable: 1
           name: Beat Tag
@@ -970,13 +970,7 @@ MonoBehaviour:
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1.8
+        fsmFloatParams: []
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -991,6 +985,24 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 1
@@ -1005,13 +1017,12 @@ MonoBehaviour:
         stringParams:
         - 
         - 
-        - FINISHED
-        byteData: 000000
+        byteData: 00000002000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 13000000130000000100000014000000110000001100000001000000010000001200000013000000130000001c000000130000001700000017000000140000000f00000017000000
+        paramDataType: 13000000130000000100000014000000110000001100000001000000010000001200000013000000130000001c000000130000001700000017000000140000000500000007000000110000001100000011000000
         paramName:
         - variable
         - gameObject
@@ -1029,10 +1040,13 @@ MonoBehaviour:
         - successEvent
         - failEvent
         - gameObject
-        - delay
-        - scheduledEvent
-        paramDataPos: 000000000100000000000000000000000000000001000000010000000200000000000000020000000300000000000000040000000000000001000000010000000000000002000000
-        paramByteDataSize: 000000000000000001000000000000000000000000000000010000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        - component
+        - colliderSelect
+        - enable
+        - inclChildren
+        - allCollider
+        paramDataPos: 000000000100000000000000000000000000000001000000010000000200000000000000020000000300000000000000040000000000000001000000010000000000000003000000020000000300000004000000
+        paramByteDataSize: 000000000000000001000000000000000000000000000000010000000100000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000
     - name: Slow Time
       description: 
       colorIndex: 1
@@ -1056,15 +1070,17 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.RandomFloat
         - Chronos.PlayMaker.ScaleGlobalClockTimeSmoothly
         - Chronos.PlayMaker.Schedule
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000004000000
-        actionHashCodes: 3fb24c03657e6f01
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000300000007000000
+        actionHashCodes: 2ee017043fb24c03657e6f01
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -1099,7 +1115,25 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0.5
+          value: 0.25
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.8
+        - useVariable: 1
+          name: Slow Down Scale
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: Slow Down Scale
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -1111,7 +1145,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 9
+          value: 5
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
@@ -1126,8 +1160,11 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 120000000f0000000f00000001000000140000000f00000017000000
+        paramDataType: 0f0000000f0000000f000000120000000f0000000f00000001000000140000000f00000017000000
         paramName:
+        - min
+        - max
+        - storeResult
         - globalClockKey
         - timeScale
         - duration
@@ -1135,8 +1172,8 @@ MonoBehaviour:
         - gameObject
         - delay
         - scheduledEvent
-        paramDataPos: 00000000000000000100000000000000000000000200000000000000
-        paramByteDataSize: 00000000000000000000000001000000000000000000000000000000
+        paramDataPos: 00000000010000000200000000000000030000000400000000000000000000000500000000000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000001000000000000000000000000000000
     - name: Reset Time
       description: 
       colorIndex: 1
@@ -1258,7 +1295,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Gametune Check
+        toState: Enable Collider 2D
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -1469,6 +1506,101 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000010000000000000000000000000000000000000001000000
         paramByteDataSize: 00000000000000000100000000000000000000000000000001000000
+    - name: Enable Collider 2D
+      description: 
+      colorIndex: 1
+      position:
+        serializedVersion: 2
+        x: 195
+        y: 290
+        width: 152
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Gametune Check
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.EnableCollider2D
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: e834e203
+        unityObjectParams:
+        - {fileID: 0}
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 02000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000000500000007000000110000001100000011000000
+        paramName:
+        - gameObject
+        - component
+        - colliderSelect
+        - enable
+        - inclChildren
+        - allCollider
+        paramDataPos: 000000000000000000000000000000000100000002000000
+        paramByteDataSize: 000000000000000004000000000000000000000000000000
     events:
     - name: COLLISION ENTER 2D
       isSystemEvent: 1
@@ -1541,6 +1673,12 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: 1
+      - useVariable: 1
+        name: Slow Down Scale
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       intVariables: []
       boolVariables:
       - useVariable: 1
@@ -1611,7 +1749,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: This FSM handles the Starting Beat interaction/s.
     docUrl: 
     showStateLabel: 0
@@ -2122,353 +2260,6 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 1
---- !u!114 &8806923308860766622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8806923308860766244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fsm:
-    dataVersion: 2
-    usedInTemplate: {fileID: 0}
-    name: Relocate
-    startState: Check Collision
-    states:
-    - name: Check Collision
-      description: Checks whether the beat is stacking into another BEAT
-      colorIndex: 3
-      position:
-        serializedVersion: 2
-        x: 50
-        y: 100
-        width: 260
-        height: 32
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: Relocate
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.Collision2dEvent
-        customNames:
-        - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 69cd8c01
-        unityObjectParams: []
-        fsmGameObjectParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        fsmOwnerDefaultParams:
-        - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Beat
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmIntParams: []
-        fsmBoolParams: []
-        fsmVector2Params: []
-        fsmVector3Params: []
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams:
-        - FINISHED
-        byteData: 01000000
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 14000000070000001200000017000000130000000f000000
-        paramName:
-        - gameObject
-        - collision
-        - collideTag
-        - sendEvent
-        - storeCollider
-        - storeForce
-        paramDataPos: 000000000000000000000000000000000000000000000000
-        paramByteDataSize: 000000000400000000000000000000000000000000000000
-    - name: Relocate
-      description: Move the beat to another location
-      colorIndex: 6
-      position:
-        serializedVersion: 2
-        x: 384
-        y: 192
-        width: 174
-        height: 32
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: Check Collision
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.RandomFloat
-        - HutongGames.PlayMaker.Actions.RandomFloat
-        - HutongGames.PlayMaker.Actions.SetPosition
-        customNames:
-        - 
-        - 
-        - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000300000006000000
-        actionHashCodes: 2ee017042ee01704f6e5be03
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams:
-        - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: -8
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 8
-        - useVariable: 1
-          name: Delta X
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: -4
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 3
-        - useVariable: 1
-          name: Delta Y
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: Delta X
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: Delta Y
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmIntParams: []
-        fsmBoolParams: []
-        fsmVector2Params: []
-        fsmVector3Params:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams: []
-        byteData: 000000000000
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 0f0000000f0000000f0000000f0000000f0000000f000000140000001c0000000f0000000f0000000f000000070000000100000001000000
-        paramName:
-        - min
-        - max
-        - storeResult
-        - min
-        - max
-        - storeResult
-        - gameObject
-        - vector
-        - x
-        - y
-        - z
-        - space
-        - everyFrame
-        - lateUpdate
-        paramDataPos: 0000000001000000020000000300000004000000050000000000000000000000060000000700000008000000000000000400000005000000
-        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000100000001000000
-    events:
-    - name: FINISHED
-      isSystemEvent: 1
-      isGlobal: 0
-    globalTransitions: []
-    variables:
-      floatVariables:
-      - useVariable: 1
-        name: Delta X
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: 0
-      - useVariable: 1
-        name: Delta Y
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: 0
-      intVariables: []
-      boolVariables: []
-      stringVariables: []
-      vector2Variables: []
-      vector3Variables:
-      - useVariable: 1
-        name: New Position
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {x: 0, y: 0, z: 0}
-      colorVariables: []
-      rectVariables: []
-      quaternionVariables: []
-      gameObjectVariables: []
-      objectVariables: []
-      materialVariables: []
-      textureVariables: []
-      arrayVariables: []
-      enumVariables: []
-      categories:
-      - 
-      variableCategoryIDs: 000000000000000000000000
-    description: This FSM prevents beats from stacking into one another.
-    docUrl: 
-    showStateLabel: 0
-    maxLoopCount: 0
-    watermark: 
-    password: 
-    locked: 0
-    manualUpdate: 0
-    keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
-    ExposedEvents: []
-    RestartOnEnable: 1
-    EnableDebugFlow: 0
-    EnableBreakpoints: 1
-    editorFlags: 0
-    activeStateName: 
-    mouseEvents: 0
-    handleLevelLoaded: 0
-    handleTriggerEnter2D: 0
-    handleTriggerExit2D: 0
-    handleTriggerStay2D: 0
-    handleCollisionEnter2D: 0
-    handleCollisionExit2D: 0
-    handleCollisionStay2D: 1
-    handleTriggerEnter: 0
-    handleTriggerExit: 0
-    handleTriggerStay: 0
-    handleCollisionEnter: 0
-    handleCollisionExit: 0
-    handleCollisionStay: 0
-    handleParticleCollision: 0
-    handleControllerColliderHit: 0
-    handleJointBreak: 0
-    handleJointBreak2D: 0
-    handleOnGUI: 0
-    handleFixedUpdate: 0
-    handleLateUpdate: 0
-    handleApplicationEvents: 0
-    handleUiEvents: 0
-    handleLegacyNetworking: 0
-    handleAnimatorMove: 0
-    handleAnimatorIK: 0
-  fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 1
 --- !u!114 &8806923308860766617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2547,7 +2338,7 @@ MonoBehaviour:
   isRelative: 0
   isFrom: 0
   isIndependentUpdate: 0
-  autoKill: 1
+  autoKill: 0
   isActive: 1
   isValid: 1
   target: {fileID: 8806923308860766218}
@@ -2587,7 +2378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetFSMs:
-  - {fileID: 8806923308860766622}
+  - {fileID: 0}
   - {fileID: 8806923308860766599}
 --- !u!114 &8806923308860766621
 MonoBehaviour:
@@ -2658,7 +2449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetFSMs:
-  - {fileID: 8806923308860766622}
+  - {fileID: 0}
 --- !u!1001 &4384620048688177015
 PrefabInstance:
   m_ObjectHideFlags: 0

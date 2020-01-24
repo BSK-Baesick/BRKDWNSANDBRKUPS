@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: b216dc12f1d6a4d4997d7e6469bffc60
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: space punk
+  fontNames:
+  - space punk
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 47d2c2d2da9ea024e853d45432e97de9, type: 3}
+  - {fileID: 12800000, guid: a0a26905a74df3c42ac9c1c72ec636f0, type: 3}
+  - {fileID: 12800000, guid: a01fe11b0a2b97c42b8fbae05a94aaf2, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
