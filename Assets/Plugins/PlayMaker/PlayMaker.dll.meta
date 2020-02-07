@@ -1,130 +1,73 @@
 fileFormatVersion: 2
 guid: e743331561ef77147ae48cda9bcb8209
 PluginImporter:
-  externalObjects: {}
-  serializedVersion: 2
+  serializedVersion: 1
   iconMap: {}
   executionOrder: {}
-  defineConstraints: []
   isPreloaded: 0
-  isOverridable: 0
-  isExplicitlyReferenced: 0
-  validateReferences: 1
   platformData:
-  - first:
-      '': BlackBerry
-    second:
-      enabled: 1
-      settings: {}
-  - first:
-      '': Linux
-    second:
-      enabled: 1
-      settings:
-        CPU: x86
-  - first:
-      '': LinuxUniversal
-    second:
-      enabled: 1
-      settings: {}
-  - first:
-      '': OSXIntel
-    second:
+    Android:
       enabled: 1
       settings:
         CPU: AnyCPU
-  - first:
-      '': OSXIntel64
-    second:
-      enabled: 1
-      settings:
-        CPU: AnyCPU
-  - first:
-      '': WP8
-    second:
-      enabled: 0
-      settings:
-        CPU: AnyCPU
-        DontProcess: False
-        PlaceholderPath: 
-  - first:
-      '': Web
-    second:
-      enabled: 1
-      settings: {}
-  - first:
-      '': WebStreamed
-    second:
-      enabled: 1
-      settings: {}
-  - first:
-      Android: Android
-    second:
-      enabled: 1
-      settings:
-        CPU: AnyCPU
-  - first:
-      Any: 
-    second:
+    Any:
       enabled: 0
       settings: {}
-  - first:
-      Editor: Editor
-    second:
+    BlackBerry:
+      enabled: 1
+      settings: {}
+    Editor:
       enabled: 1
       settings:
         CPU: AnyCPU
         DefaultValueInitialized: true
         OS: AnyOS
-  - first:
-      Facebook: Win
-    second:
+    Linux:
       enabled: 1
       settings:
-        CPU: AnyCPU
-  - first:
-      Facebook: Win64
-    second:
+        CPU: x86
+    Linux64:
       enabled: 1
       settings:
-        CPU: AnyCPU
-  - first:
-      Nintendo Switch: Switch
-    second:
+        CPU: x86_64
+    LinuxUniversal:
       enabled: 1
       settings: {}
-  - first:
-      PS4: PS4
-    second:
+    OSXIntel:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+    OSXIntel64:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+    OSXUniversal:
       enabled: 1
       settings: {}
-  - first:
-      Standalone: Linux64
-    second:
+    PS4:
+      enabled: 1
+      settings: {}
+    WP8:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+        DontProcess: False
+        PlaceholderPath: 
+    Web:
+      enabled: 1
+      settings: {}
+    WebStreamed:
+      enabled: 1
+      settings: {}
+    Win:
       enabled: 1
       settings:
         CPU: AnyCPU
-  - first:
-      Standalone: OSXUniversal
-    second:
-      enabled: 1
-      settings:
-        CPU: 
-  - first:
-      Standalone: Win
-    second:
+    Win64:
       enabled: 1
       settings:
         CPU: AnyCPU
-  - first:
-      Standalone: Win64
-    second:
-      enabled: 1
-      settings:
-        CPU: AnyCPU
-  - first:
-      Windows Store Apps: WindowsStoreApps
-    second:
+    WindowsStoreApps:
       enabled: 0
       settings:
         CPU: AnyCPU
@@ -132,25 +75,22 @@ PluginImporter:
         PlaceholderPath: 
         SDK: AnySDK
         ScriptingBackend: AnyScriptingBackend
-  - first:
-      XboxOne: XboxOne
-    second:
+    XboxOne:
       enabled: 1
       settings: {}
-  - first:
-      iPhone: iOS
-    second:
+    iOS:
       enabled: 1
       settings:
         CompileFlags: 
         FrameworkDependencies: 
-  - first:
-      tvOS: tvOS
-    second:
+    tvOS:
       enabled: 1
       settings:
         CompileFlags: 
         FrameworkDependencies: 
+    Switch:
+      enabled: 1
+      settings: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -34,50 +34,6 @@ PluginImporter:
       enabled: 1
       settings: {}
   - first:
-      '': Linux
-    second:
-      enabled: 1
-      settings:
-        CPU: x86
-  - first:
-      '': LinuxUniversal
-    second:
-      enabled: 1
-      settings: {}
-  - first:
-      '': OSXIntel
-    second:
-      enabled: 1
-      settings:
-        CPU: AnyCPU
-  - first:
-      '': OSXIntel64
-    second:
-      enabled: 1
-      settings:
-        CPU: AnyCPU
-  - first:
-      '': SamsungTV
-    second:
-      enabled: 1
-      settings:
-        STV_MODEL: STANDARD_13
-  - first:
-      '': Tizen
-    second:
-      enabled: 1
-      settings: {}
-  - first:
-      '': Web
-    second:
-      enabled: 1
-      settings: {}
-  - first:
-      '': WebStreamed
-    second:
-      enabled: 1
-      settings: {}
-  - first:
       Android: Android
     second:
       enabled: 1
@@ -114,7 +70,36 @@ PluginImporter:
       settings:
         CPU: AnyCPU
   - first:
+      Samsung TV: SamsungTV
+    second:
+      enabled: 1
+      settings:
+        STV_MODEL: STANDARD_13
+  - first:
+      Standalone: Linux
+    second:
+      enabled: 1
+      settings:
+        CPU: x86
+  - first:
       Standalone: Linux64
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+  - first:
+      Standalone: LinuxUniversal
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Standalone: OSXIntel
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+  - first:
+      Standalone: OSXIntel64
     second:
       enabled: 1
       settings:
@@ -123,8 +108,7 @@ PluginImporter:
       Standalone: OSXUniversal
     second:
       enabled: 1
-      settings:
-        CPU: 
+      settings: {}
   - first:
       Standalone: Win
     second:
@@ -137,6 +121,21 @@ PluginImporter:
       enabled: 1
       settings:
         CPU: AnyCPU
+  - first:
+      Tizen: Tizen
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Web: Web
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Web: WebStreamed
+    second:
+      enabled: 1
+      settings: {}
   - first:
       WebGL: WebGL
     second:

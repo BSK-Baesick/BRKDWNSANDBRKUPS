@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace BaesickEntertainment
-{
+
     public class SplashScreenSceneManager : MonoBehaviour
     {
     
@@ -20,5 +19,4 @@ namespace BaesickEntertainment
         {
             bl_SceneLoaderUtils.GetLoader.LoadLevel(sceneName);
         }
-    }   
-}
+    }
