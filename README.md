@@ -1,7 +1,7 @@
 # BRKDWNSANDBRKUPS
-##Developed by Baesick Entertainment
-###Original Game Design by Matthew Johannes C. Balubar
-###Version V2020.0.16a1 (Post-Alpha)
+## Developed by Baesick Entertainment
+### Original Game Design by Matthew Johannes C. Balubar
+### Version V2020.0.16a1 (Post-Alpha)
 
 Dive into a thrilling world of ARCADE as the RHYTHM starts to beat in the iconic songs of all times. In BRKDWNS&BRKUPS, you follow the storyline of a man and a woman who falls in love with each other through music.
 
