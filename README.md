@@ -1,5 +1,5 @@
 # BRKDWNSANDBRKUPS
-## Developed by Baesick Entertainment
+### Developed by Baesick Entertainment
 ### Original Game Design by Matthew Johannes C. Balubar
 ### Version V2020.0.16a1 (Post-Alpha)
 
